@@ -114,7 +114,7 @@ class sub_convert():
                     continue
             elif 'vmess://' in node:
                 try:
-                    node_del_head = node.replace('vmess://', '')
+                    node_del_head = node.replace('vmess://', '').split('@')[0]
                     node_json_raw = sub_convert.base64_decode(node_del_head)
                     if '"' in node_json_raw:
                         node_json = json.loads(node_json_raw)
