@@ -606,7 +606,7 @@
     "remarks": "mrvcoder/V2rayCollector",
     "site": "https://github.com/mrvcoder/V2rayCollector",
     "url": "https://raw.githubusercontent.com/mrvcoder/V2rayCollector/main/mixed_iran.txt",
-    "enabled": true
+    "enabled": false
   },
   {
     "id": 87,
