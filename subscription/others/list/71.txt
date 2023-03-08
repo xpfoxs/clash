@@ -257,7 +257,7 @@ trojan://0f098bb2-9fad-3cc3-8acf-2a3268c1eb27@hnm.xiaohouzi.club:19362?allowInse
 ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M@85.208.108.60:3306#%5B%F0%9F%87%AF%F0%9F%87%B5%5D85.208.108.60%3A3306%28Y6R9pAtvxxzmGC%29
 trojan://d7336719-df8e-4902-a7e1-8ff2c324eda3@edge02.themars.top:31106?allowInsecure=1#%5B%F0%9F%87%A8%F0%9F%87%B3%5Dedge02.themars.top%3A31106%28d7336719-df8e-4902-a7e1-8ff2c324eda3%29
 trojan://265f092f-418b-30c9-a479-4800fd44dd19mielink@kaizen-tw-4.mielink-dns2.com:443?allowInsecure=1&sni=paydiu.com#%5B%F0%9F%87%B9%F0%9F%87%BC%5Dkaizen-tw-4.mielink-dns2.com%3A443%28265f092f-418b-30c9-a479-4800fd44dd19mielink%29
-trojan://265f092f-418b-30c9-a479-4800fd44dd19mielink@kaizen-tw-2.mielink-dns2.com:443?allowInsecure=1&sni=paydiu.com#%5B%F0%9F%87%B9%F0%9F%87%BC%5Dkaizen-tw-2.mielink-dns2.com%3A443%28265f092f-418b-30c9-a479-4800fd44dd19mielink%29
+trojan://265f092f-418b-30c9-a479-4800fd44dd19mielink@kaizen-tw-2.mielink-dns2.com:443?allowInsecure=1&sni=paydiu.com#%5B%F0%9F%87%A9%F0%9F%87%AA%5Dkaizen-tw-2.mielink-dns2.com%3A443%28265f092f-418b-30c9-a479-4800fd44dd19mielink%29
 trojan://telegram-id-privatevpns@54.93.240.151:22222?allowInsecure=1&sni=trj.rollingnext.co.uk#%5B%F0%9F%87%A9%F0%9F%87%AA%5D54.93.240.151%3A22222%28telegram-id-privatevpns%29
 trojan://telegram-id-privatevpns@54.78.157.126:22222?allowInsecure=1&sni=trj.rollingnext.co.uk#%5B%F0%9F%87%AE%F0%9F%87%AA%5D54.78.157.126%3A22222%28telegram-id-privatevpns%29
 trojan://telegram-id-directvpn@34.220.74.123:22222?allowInsecure=1&sni=trj.rollingnext.co.uk#%5B%F0%9F%87%BA%F0%9F%87%B8%5D34.220.74.123%3A22222%28telegram-id-directvpn%29
