@@ -114,7 +114,7 @@ class sub_convert():
                     continue
             elif 'vmess://' in node:
                 try:
-                    node_del_head = node.replace('vmess://', '').split('@')[0]
+                    node_del_head = re.split('[^A-Za-z0-9]+',node.replace("vmess",""))[1]
                     node_json_raw = sub_convert.base64_decode(node_del_head)
                     if '"' in node_json_raw:
                         node_json = json.loads(node_json_raw)
@@ -639,5 +639,5 @@ class sub_convert():
 
         return yaml_content
 if __name__ == '__main__':
-    sub_convert.format("trojan://bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nYlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272@ca-trojan.bonds.id:443?allowInsecure=1#🇫🇷FR 7 → tg@nicevpn123")
+    sub_convert.format("سرورvmess/پاریسدانلود و آپلود عالیمخصوص همراه اولاندروید بزنامه ماتسوری،ویندوز برنامه نکورِی متصل بشیدvmess://eyJhZGQiOiJ3d3cuY29kZXBlbi5pbyIsImFpZCI6IjAiLCJhbHBuIjoiIiwiaG9zdCI6ImZyLXYuc3NobWF4Lnh5eiIsImlkIjoiNmUwNTM4ZGYtMTg1ZS00MDY3LWI2MmEtMzhlMTJlY2I5MzYwIiwibmV0Ijoid3MiLCJwYXRoIjoiL3ZtZXNzIiwicG9ydCI6IjQ0MyIsInBzIjoi2b7Yp9ix24zYs1xuQHYycmF5TkdfVlBOIiwic2N5IjoiYXV0byIsInNuaSI6ImZyLXYuc3NobWF4Lnh5eiIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9@v2rayNG_VPN")
     # sub_convert.yaml_encode(["trojan://18844@zxcvbn@os-tr-2.cats22.net:443?allowInsecure=1#%5B%F0%9F%87%A6%F0%9F%87%B6%5Dzxcvbn%40os-tr-2.cats22.net%3A443%2818844%29"])
