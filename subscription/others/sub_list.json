@@ -603,10 +603,10 @@
   },
   {
     "id": 86,
-    "remarks": "mrvcoder/V2rayCollector",
-    "site": "https://github.com/mrvcoder/V2rayCollector",
-    "url": "https://raw.githubusercontent.com/mrvcoder/V2rayCollector/main/mixed_iran.txt",
-    "enabled": false
+    "remarks": "harryyang520/v2ray",
+    "site": "https://github.com/harryyang520/v2ray",
+    "url": "https://raw.githubusercontent.com/harryyang520/v2ray/main/harry",
+    "enabled": true
   },
   {
     "id": 87,
@@ -627,6 +627,83 @@
     "remarks": "xieshunxi1/subscribe_clash_v2ray",
     "site": "https://github.com/xieshunxi1/subscribe_clash_v2ray",
     "url": "https://raw.githubusercontent.com/xieshunxi1/subscribe_clash_v2ray/main/subscribe/v2ray.txt",
+    "enabled": true
+  },
+  {
+    "id": 90,
+    "remarks": "Mr8AHAL/v2ray",
+    "site": "https://github.com/Mr8AHAL/v2ray",
+    "url": "https://raw.githubusercontent.com/Mr8AHAL/v2ray/main/SERVER.txt",
+    "enabled": true
+  },
+  {
+    "id": 91,
+    "remarks": "flyingiq/v2ray",
+    "site": "https://github.com/flyingiq/v2ray",
+    "url": "https://raw.githubusercontent.com/flyingiq/v2ray/main/v2ray",
+    "enabled": true
+  },
+  {
+    "id": 92,
+    "remarks": "imohammadkhalili/V2RAY",
+    "site": "https://github.com/imohammadkhalili/V2RAY",
+    "url": "https://raw.githubusercontent.com/imohammadkhalili/V2RAY/main/Mkhalili",
+    "enabled": true
+  },
+  {
+    "id": 93,
+    "remarks": "mlabalabala/v2ray-node",
+    "site": "https://github.com/mlabalabala/v2ray-node",
+    "url": "https://raw.githubusercontent.com/mlabalabala/v2ray-node/main/nodefree4clash.txt",
+    "enabled": true
+  },
+  {
+    "id": 94,
+    "remarks": "hsb4657/v2ray",
+    "site": "https://github.com/hsb4657/v2ray",
+    "url": "https://raw.githubusercontent.com/hsb4657/v2ray/main/lastest.txt",
+    "enabled": true
+  },
+  {
+    "id": 95,
+    "remarks": "Tenerome/v2ray",
+    "site": "https://github.com/Tenerome/v2ray",
+    "url": "https://raw.githubusercontent.com/Tenerome/v2ray/main/vmess.txt",
+    "enabled": true
+  },
+  {
+    "id": 96,
+    "remarks": "CrazyFireFighter/Crazy_V2RayN",
+    "site": "https://github.com/CrazyFireFighter/Crazy_V2RayN",
+    "url": "https://raw.githubusercontent.com/CrazyFireFighter/Crazy_V2RayN/main/For_my_family_%26_friends",
+    "enabled": true
+  },
+  {
+    "id": 97,
+    "remarks": "resasanian/Mirza",
+    "site": "https://github.com/resasanian/Mirza",
+    "url": "https://raw.githubusercontent.com/resasanian/Mirza/main/sub",
+    "enabled": true
+  },
+  {
+    "id": 98,
+    "remarks": "hangman1998/v2ray-servers",
+    "site": "https://github.com/hangman1998/v2ray-servers",
+    "url": "https://raw.githubusercontent.com/hangman1998/v2ray-servers/main/azad.txt",
+    "enabled": true
+  },
+  {
+    "id": 99,
+    "remarks": "Mahanfix/v2rayvpn",
+    "site": "https://github.com/Mahanfix/v2rayvpn",
+    "url": "https://raw.githubusercontent.com/Mahanfix/v2rayvpn/main/mahanfix",
+    "enabled": true
+  },
+  {
+    "id": 100,
+    "remarks": "kaoxindalao/v2raycheshi",
+    "site": "https://github.com/kaoxindalao/v2raycheshi",
+    "url": "https://raw.githubusercontent.com/kaoxindalao/v2raycheshi/main/v2raycheshi",
     "enabled": true
   }
 ]
