@@ -114,12 +114,12 @@ class sub_convert():
                     continue
             elif 'vmess://' in node:
                 try:
-                    node_part_list = re.split('[^a-zA-Z0-9_+-/:=]+',node)
+                    node_part_list = re.split('[^a-zA-Z0-9_+-/:=`]+',node)
                     for node_part in node_part_list:
                         if 'vmess://' in node_part:
                             node_del_head = node_part.replace('vmess://', '')
                             break
-                    node_json_raw = sub_convert.base64_decode(node_del_head)
+                    node_json_raw = sub_convert.base64_decode(node_del_head).split("}")[0] + "}"
                     if '"' in node_json_raw:
                         node_json = json.loads(node_json_raw)
                     else:
@@ -136,14 +136,17 @@ class sub_convert():
             elif 'trojan://' in node:
                 try:
                     node_del_head = node.replace('trojan://', '').split('#')[0]
-                    node_password = node_del_head.rsplit('@',1)[0]
-                    node_list_expassword = re.split('\?|#', node_del_head.rsplit('@',1)[1])
-                    node_part = [node_password] + node_list_expassword
+                    node_list = node_del_head.split('?')
+                    node_server_part = node_list[0]
+                    node_configue_part = node_list[1]
+                    node_password = node_server_part.rsplit('@',1)[0]
+                    node_server_part_expasswd = node_server_part.rsplit('@',1)[1]
+                    node_part = [node_password] + [node_server_part_expasswd] + [node_configue_part]
                     node_server_and_port = urllib.parse.unquote(node_part[1])
                     node_server_and_port_part = node_server_and_port.split(':')
                     if node_server_and_port_part[1].isdigit() and node_server_and_port_part[0]:
                         server_head = sub_convert.find_country(node_server_and_port_part[0])
-                        password = re.sub('trojan://|!str|!<str>| |\[|\]|{|}','',urllib.parse.unquote(node_part[0]))
+                        password = re.sub('trojan://|!str|!<str>| |\[|\]|{|}','',urllib.parse.unquote(node_password))
                         name_renamed = server_head + node_server_and_port + '(' + password + ')'
                         node_raw = node_del_head.split('#')[0] + '#' + urllib.parse.quote(name_renamed)
                         node = 'trojan://' + node_raw
@@ -584,9 +587,10 @@ class sub_convert():
             elif 'trojan://' in line:
                 try:
                     url_content = line.replace('trojan://', '')
-                    node_password = url_content.rsplit('@',1)[0]
-                    node_list_expassword = re.split('\?|#', url_content.rsplit('@',1)[1])
-                    part_list = [node_password] + node_list_expassword
+                    url_part_list = re.split('\?|#',url_content)
+                    node_password = url_part_list[0].rsplit('@',1)[0]
+                    node_server_and_port = url_part_list[0].rsplit('@',1)[1]
+                    part_list = [node_password] + [node_server_and_port] + url_part_list[1:]
                     yaml_url.setdefault('name', '"' + urllib.parse.unquote(part_list[-1]) + '"')
                     yaml_url.setdefault('server', re.sub(' |\[|\]|{|}|\?','',urllib.parse.unquote(part_list[1]).split(':')[0]))
                     yaml_url.setdefault('port', urllib.parse.unquote(part_list[1]).split(':')[1])
@@ -604,16 +608,15 @@ class sub_convert():
                                 yaml_url.setdefault('sni', urllib.parse.unquote(config[4:]))
                             elif 'type=' in config:
                                 yaml_url.setdefault('network', config[5:])
-                            if 'network' in yaml_url.keys():
                                 yaml_url.setdefault('udp', 'true')
-                                if yaml_url['network'] == 'ws':
-                                    if 'path=' in config:
-                                        yaml_url.setdefault('ws-opts', {}).setdefault('path', urllib.parse.unquote(config[5:].split('?')[0]))
-                                    elif 'host=' in config:
-                                        yaml_url.setdefault('ws-opts', {}).setdefault('headers', {}).setdefault('host', config[5:])
-                                elif yaml_url['network'] == 'grpc':
-                                    if 'servicename=' in config:
-                                        yaml_url.setdefault('grpc-opts', {}).setdefault('grpc-service-name', config[12:])
+                            if 'type=ws' in part_list[2]:
+                                if 'path=' in config:
+                                    yaml_url.setdefault('ws-opts', {}).setdefault('path', re.sub(' |\[|\]|{|}|\?|@|"','',urllib.parse.unquote(config[5:])))
+                                elif 'host=' in config:
+                                    yaml_url.setdefault('ws-opts', {}).setdefault('headers', {}).setdefault('host', config[5:])
+                            elif 'type=grpc' in part_list[2]:
+                                if 'servicename=' in config:
+                                    yaml_url.setdefault('grpc-opts', {}).setdefault('grpc-service-name', config[12:])
                             else:
                                 if 'alpn=' in config:
                                     yaml_url.setdefault('alpn', '[' + config[5:] + ']')
@@ -643,5 +646,5 @@ class sub_convert():
 
         return yaml_content
 if __name__ == '__main__':
-    sub_convert.format("📶 سرور جدید / 🔵🟡 V2ray(S 286):vmess://eyJhZGQiOiJ0cm8uY2hhdC1lbmdpbmUtYi5wdyIsImFpZCI6IjY0IiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InRyby5jaGF0LWVuZ2luZS1iLnB3IiwiaWQiOiIzYzM2ZmI2Ny1hNGY3LTRmODgtODg3ZC1jZDMxNWQxYjY5YTMiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwicG9ydCI6IjQ0MyIsInBzIjoiUyAyODYgQENvbmZpZ192MnJheSIsInNjeSI6ImF1dG8iLCJzbmkiOiJ0cm8uY2hhdC1lbmdpbmUtYi5wdyIsInRscyI6InRscyIsInR5cGUiOiIiLCJ2IjoiMiJ9=آموزش:اندروید | آیفون👉 @Config_v2ray")
+    sub_convert.yaml_encode(["trojan://Go5e2nJM8U@45.85.119.179:2087?path=@v2rayNG_VPNN&security=tls&host=ee.v2jey.fun&type=ws&sni=aa.v2jey.fun#%40v2ray_ar وصل شدیدحمایت یادتون نره ♥️ سروررایگان 👇👇 @v2ray_ar سرور فروشی👇👇 @oorg_ar"])
     # sub_convert.yaml_encode(["trojan://18844@zxcvbn@os-tr-2.cats22.net:443?allowInsecure=1#%5B%F0%9F%87%A6%F0%9F%87%B6%5Dzxcvbn%40os-tr-2.cats22.net%3A443%2818844%29"])
