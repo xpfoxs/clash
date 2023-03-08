@@ -399,7 +399,7 @@ class sub_convert():
                         if vmess_config['path'] is not None:
                             vmess_config['path'] = re.sub(' |\[|\]|{|}|\?|@|"','',urllib.parse.unquote(vmess_config['path'])).split(':')[-1]
                         if vmess_config['host'] is not None:
-                            vmess_config['host'] = re.sub(' |\[|\]|{|}|\?|"','',urllib.parse.unquote(vmess_config['host'])).split(':')[-1]
+                            vmess_config['host'] = re.sub(' |\[|\]|{|}|\?|@|"','',urllib.parse.unquote(vmess_config['host'])).split(':')[-1]
                         if vmess_config['net'] == 'ws':
                             if vmess_config['tls'] == 'tls':
                                 yaml_url.setdefault('tls', 'true')
