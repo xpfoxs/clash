@@ -1,0 +1,1 @@
+trojan://f62b7fbe09@us-sjc.okman.cf:2096?allowInsecure=0&sni=us-sjc.okman.cf#%5B%F0%9F%87%BA%F0%9F%87%B8%5Dus-sjc.okman.cf%3A2096%28f62b7fbe09%29
