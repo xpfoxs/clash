@@ -296,5 +296,5 @@ trojan://a3278882-3614-39cf-a3d6-faefa8c910ab@iplc.xiaohouzi.club:20514?allowIns
 trojan://0f098bb2-9fad-3cc3-8acf-2a3268c1eb27@hnm.xiaohouzi.club:17109?allowInsecure=1&sni=$$$$$hnm.xiaohouzi.club#%5B%F0%9F%87%A8%F0%9F%87%B3%5Dhnm.xiaohouzi.club%3A17109%280f098bb2-9fad-3cc3-8acf-2a3268c1eb27%29
 ss://YWVzLTI1Ni1nY206cEtFVzhKUEJ5VFZUTHRN@85.208.108.60:4444#%5B%F0%9F%87%AF%F0%9F%87%B5%5D85.208.108.60%3A4444%28pKEW8JPByTVTLtM%29
 trojan://shenmegui@185.49.33.47:8461?allowInsecure=1&sni=$jp.swiftfalcon.app#%5B%F0%9F%87%AC%F0%9F%87%A7%5D185.49.33.47%3A8461%28shenmegui%29
-trojan://265f092f-418b-30c9-a479-4800fd44dd19mielink@kaizen-jp-11.mielink-dns2.com:443?allowInsecure=1&sni=paydiu.com#%5B%F0%9F%87%AE%F0%9F%87%B9%5Dkaizen-jp-11.mielink-dns2.com%3A443%28265f092f-418b-30c9-a479-4800fd44dd19mielink%29
+trojan://265f092f-418b-30c9-a479-4800fd44dd19mielink@kaizen-jp-11.mielink-dns2.com:443?allowInsecure=1&sni=paydiu.com#%5B%F0%9F%87%BA%F0%9F%87%B8%5Dkaizen-jp-11.mielink-dns2.com%3A443%28265f092f-418b-30c9-a479-4800fd44dd19mielink%29
 trojan://265f092f-418b-30c9-a479-4800fd44dd19mielink@23.145.24.30:443?allowInsecure=1#%5B%F0%9F%87%BA%F0%9F%87%B8%5D23.145.24.30%3A443%28265f092f-418b-30c9-a479-4800fd44dd19mielink%29
