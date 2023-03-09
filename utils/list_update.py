@@ -33,7 +33,7 @@ def check_url(url):  # 判断远程远程链接是否已经更新
 
 class update_url():
 
-    def update_main(update_enable_list=[0, 11, 25, 34, 43, 54, 57, 67, 75]):
+    def update_main(update_enable_list=[11, 25, 34, 43, 54, 57, 67, 75]):
         if len(update_enable_list) > 0:
             for id in update_enable_list:
                 status = update_url.update(id)
@@ -57,18 +57,18 @@ class update_url():
                 print(f'Id {id} URL 无可用更新\n')
 
     def update(id):
-        if id == 0:
-            # remarks: pojiezhiyuanjun/freev2, 将原链接更新至 https://raw.fastgit.org/pojiezhiyuanjun/freev2/master/%MM%(DD - 1).txt
-            # today = datetime.today().strftime('%m%d')
-            # 得到当前日期前一天 https://blog.csdn.net/wanghuafengc/article/details/42458721
-            yesterday = (datetime.today() + timedelta(-1)).strftime('%m%d')
-            front_url = 'https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/'
-            end_url = 'clash.yml'
-            # 修改字符串中的某一位字符 https://www.zhihu.com/question/31800070/answer/53345749
-            url_update = front_url + yesterday + end_url
-            return [0, url_update]
+        # if id == 0:
+        #     # remarks: pojiezhiyuanjun/freev2, 将原链接更新至 https://raw.fastgit.org/pojiezhiyuanjun/freev2/master/%MM%(DD - 1).txt
+        #     # today = datetime.today().strftime('%m%d')
+        #     # 得到当前日期前一天 https://blog.csdn.net/wanghuafengc/article/details/42458721
+        #     yesterday = (datetime.today() + timedelta(-1)).strftime('%m%d')
+        #     front_url = 'https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/'
+        #     end_url = 'clash.yml'
+        #     # 修改字符串中的某一位字符 https://www.zhihu.com/question/31800070/answer/53345749
+        #     url_update = front_url + yesterday + end_url
+        #     return [0, url_update]
 
-        elif id == 11:
+        if id == 11:
             today = datetime.today()
             front_url = 'https://raw.githubusercontent.com/halfaaa/Free/main/'
             end_url = '.txt'
