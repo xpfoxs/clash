@@ -33,7 +33,7 @@ def check_url(url):  # 判断远程远程链接是否已经更新
 
 class update_url():
 
-    def update_main(update_enable_list=[11, 25, 34, 43, 54, 57, 67, 75]):
+    def update_main(update_enable_list=[11, 25, 34, 43, 54, 57, 75]):
         if len(update_enable_list) > 0:
             for id in update_enable_list:
                 status = update_url.update(id)
@@ -66,7 +66,7 @@ class update_url():
         #     end_url = 'clash.yml'
         #     # 修改字符串中的某一位字符 https://www.zhihu.com/question/31800070/answer/53345749
         #     url_update = front_url + yesterday + end_url
-        #     return [0, url_update]
+        #     return [id, url_update]
 
         if id == 11:
             today = datetime.today()
@@ -76,9 +76,9 @@ class update_url():
                 str(today.month) + "." + str(today.day) + \
                 "." + str(today.year) + end_url
             if check_url(url_update):
-                return [21, url_update]
+                return [id, url_update]
             else:
-                return [21, 404]
+                return [id, 404]
 
         
         elif id == 25:
@@ -89,9 +89,9 @@ class update_url():
             end_url = '.txt'
             url_update = front_url + year + month + today + end_url
             if check_url(url_update):
-                return [25, url_update]
+                return [id, url_update]
             else:
-                return [25, 404]
+                return [id, 404]
 
         elif id == 34:
             url_raw = [
@@ -109,10 +109,10 @@ class update_url():
                         else:
                             continue
                 url_update = '|'.join(url_update_array)
-                return [34, url_update]
+                return [id, url_update]
             except Exception as err:
                 print(err)
-                return [34, 404]
+                return [id, 404]
 
         # elif id == 35:
         #     url_raw = 'https://raw.githubusercontent.com/arielherself/autosub/main/subs.txt'
@@ -128,10 +128,10 @@ class update_url():
         #             else:
         #                 continue
         #         url_update = '|'.join(url_update_array)
-        #         return [35, url_update]
+        #         return [id, url_update]
         #     except Exception as err:
         #         print(err)
-        #         return [37, 404]
+        #         return [id, 404]
             
         elif id == 43:
             # remarks: v2raydy/v2ray, 将原链接更新至 https://https://raw.githubusercontent.com/v2raydy/v2ray/main/%MM-%(DD - 1)%str%1.txt
@@ -143,9 +143,9 @@ class update_url():
             end_url = '.txt'
             url_update = front_url + year + '/' + month + '/' + today + end_url
             if check_url(url_update):
-                return [43, url_update]
+                return [id, url_update]
             else:
-                return [43, 404]
+                return [id, 404]
 
         elif id == 54:
             url_raw = [
@@ -164,10 +164,10 @@ class update_url():
                         else:
                             continue
                 url_update = '|'.join(url_update_array)
-                return [54, url_update]
+                return [id, url_update]
             except Exception as err:
                 print(err)
-                return [54, 404]
+                return [id, 404]
 
         elif id == 57:
             today = datetime.today().strftime('%Y%m%d')
@@ -177,41 +177,37 @@ class update_url():
             end_url = '.txt'
             url_update = front_url + year + month + today + end_url
             if check_url(url_update):
-                return [57, url_update]
+                return [id, url_update]
             else:
-                return [57, 404]
+                return [id, 404]
 
-        elif id == 67:
-            today = datetime.today().strftime('%m%d')
-            front_url = 'https://raw.githubusercontent.com/Strongmiao168/v2ray/main/'
-            url_update = front_url + today
-            if check_url(url_update):
-                return [57, url_update]
-            else:
-                return [57, 404]
+        # elif id == 67:
+        #     today = datetime.today().strftime('%m%d')
+        #     front_url = 'https://raw.githubusercontent.com/Strongmiao168/v2ray/main/'
+        #     url_update = front_url + today
+        #     if check_url(url_update):
+        #         return [id, url_update]
+        #     else:
+        #         return [id, 404]
 
-        elif id == 75:
-            url_raw = 'https://raw.githubusercontent.com/RiverFlowsInUUU/collectSub/main/sub/' + \
-                str(datetime.today().year) + '/' + str(datetime.today().month) + '/' + \
-                str(datetime.today().month)+'-' + \
-                str(datetime.today().day)+'.yaml'
-            if check_url(url_raw):
-                try:
-                    resp = requests.get(url_raw, timeout=2)
+        elif id == 76:
+            url_raw = ['https://github.com/cdddbc/getAirport/blob/main/config/sublist_free','https://github.com/cdddbc/getAirport/blob/main/config/sublist_mining']
+            url_update_array = []
+            try:
+                for url in url_raw:
+                    resp = requests.get(url, timeout=3)
                     resp_content = resp.content.decode('utf-8')
                     resp_content = resp_content.split('\n')
-                    url_update_array = []
                     for line in resp_content:
-                        if '- ' in line:
-                            line = line.replace("- ", "")
+                        if 'http' in line:
                             url_update_array.append(line)
-                    url_update = '|'.join(url_update_array)
-                    return [75, url_update]
-                except Exception as err:
-                    print(err)
-                    return [75, 404]
-            else:
-                return [75, 404]
+                        else:
+                            continue
+                url_update = '|'.join(url_update_array)
+                return [id, url_update]
+            except Exception as err:
+                print(err)
+                return [id, 404]
 
 
 if __name__ == '__main__':
