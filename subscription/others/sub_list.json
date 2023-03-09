@@ -712,5 +712,19 @@
     "site": "https://github.com/musabaguz/akun-vmess",
     "url": "https://raw.githubusercontent.com/musabaguz/akun-vmess/main/AKUN3UPDATE.yaml|https://raw.githubusercontent.com/musabaguz/akun-vmess/main/AKUN4UPDATE.yaml",
     "enabled": true
+  },
+  {
+    "id": 102,
+    "remarks": "shbioc/clash",
+    "site": "https://github.com/shbioc/clash",
+    "url": "https://raw.githubusercontent.com/shbioc/clash/main/aaa01.yml",
+    "enabled": true
+  },
+  {
+    "id": 102,
+    "remarks": "nextz06/config",
+    "site": "https://github.com/nextz06/config",
+    "url": "https://raw.githubusercontent.com/nextz06/config/main/singapura.yaml",
+    "enabled": true
   }
 ]
