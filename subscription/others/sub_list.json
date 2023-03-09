@@ -325,7 +325,7 @@
     "id": 46,
     "remarks": "rxsweet/proxies",
     "site": "https://github.com/rxsweet/proxies",
-    "url": "https://github.com/rxsweet/proxies/blob/main/sub/sources/crawlTGnode|https://github.com/rxsweet/proxies/blob/main/sub/sources/staticAll.yaml|https://github.com/rxsweet/proxies/blob/main/sub/sources/miningAll.yaml|https://github.com/rxsweet/proxies/blob/main/sub/sources/dynamicAll.yaml",
+    "url": "https://raw.githubusercontent.com/rxsweet/proxies/main/sub/sources/crawlTGnode|https://raw.githubusercontent.com/rxsweet/proxies/main/sub/sources/staticAll.yaml|https://raw.githubusercontent.com/rxsweet/proxies/main/sub/sources/miningAll.yaml|https://raw.githubusercontent.com/rxsweet/proxies/main/sub/sources/dynamicAll.yaml",
     "enabled": true
   },
   {
