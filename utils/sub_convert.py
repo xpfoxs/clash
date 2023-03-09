@@ -135,13 +135,12 @@ class sub_convert():
                     continue
             elif 'trojan://' in node:
                 try:
-                    node_del_head = node.replace('trojan://', '').split('#')[0]
-                    node_list = node_del_head.split('?')
+                    node_del_head = node.replace('trojan://', '')
+                    node_list = re.split('\?|#', node_del_head)
                     node_server_part = node_list[0]
-                    node_configue_part = node_list[1]
                     node_password = node_server_part.rsplit('@',1)[0]
                     node_server_part_expasswd = node_server_part.rsplit('@',1)[1]
-                    node_part = [node_password] + [node_server_part_expasswd] + [node_configue_part]
+                    node_part = [node_password] + [node_server_part_expasswd] + node_list[1:]
                     node_server_and_port = urllib.parse.unquote(node_part[1])
                     node_server_and_port_part = node_server_and_port.split(':')
                     if node_server_and_port_part[1].isdigit() and node_server_and_port_part[0]:
@@ -646,5 +645,5 @@ class sub_convert():
 
         return yaml_content
 if __name__ == '__main__':
-    sub_convert.yaml_encode(["trojan://Go5e2nJM8U@45.85.119.179:2087?path=@v2rayNG_VPNN&security=tls&host=ee.v2jey.fun&type=ws&sni=aa.v2jey.fun#%40v2ray_ar وصل شدیدحمایت یادتون نره ♥️ سروررایگان 👇👇 @v2ray_ar سرور فروشی👇👇 @oorg_ar"])
-    # sub_convert.yaml_encode(["trojan://18844@zxcvbn@os-tr-2.cats22.net:443?allowInsecure=1#%5B%F0%9F%87%A6%F0%9F%87%B6%5Dzxcvbn%40os-tr-2.cats22.net%3A443%2818844%29"])
+    sub_convert.format("trojan://011eb011-c68e-4f92-80eb-f9bbef707bef@us2.trojanvh.xyz:80#%5B%E7%BE%8E%E5%9B%BDTROJAN%5DUS2.TROJANVH.XYZ%3A80")
+    # sub_convert.yaml_encode(["trojan://011eb011-c68e-4f92-80eb-f9bbef707bef@us2.trojanvh.xyz:80#%5B%E7%BE%8E%E5%9B%BDTROJAN%5DUS2.TROJANVH.XYZ%3A80"])
