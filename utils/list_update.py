@@ -191,7 +191,7 @@ class update_url():
         #         return [id, 404]
 
         elif id == 76:
-            url_raw = ['https://github.com/cdddbc/getAirport/blob/main/config/sublist_free','https://github.com/cdddbc/getAirport/blob/main/config/sublist_mining']
+            url_raw = ['https://raw.githubusercontent.com/cdddbc/getAirport/main/config/sublist_free','https://raw.githubusercontent.com/cdddbc/getAirport/main/config/sublist_mining']
             url_update_array = []
             try:
                 for url in url_raw:
