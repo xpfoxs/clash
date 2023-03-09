@@ -33,7 +33,7 @@ def check_url(url):  # 判断远程远程链接是否已经更新
 
 class update_url():
 
-    def update_main(update_enable_list=[11, 25, 34, 43, 54, 57, 75]):
+    def update_main(update_enable_list=[11, 25, 34, 43, 54, 57, 76]):
         if len(update_enable_list) > 0:
             for id in update_enable_list:
                 status = update_url.update(id)

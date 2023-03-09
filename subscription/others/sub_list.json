@@ -598,7 +598,7 @@
     "id": 85,
     "remarks": "supprise0408/V2RayAggregator",
     "site": "https://github.com/supprise0408/V2RayAggregator",
-    "url": "https://raw.githubusercontent.com/supprise0408/V2RayAggregator/master/sub/airport_sub_merge.txt",
+    "url": "https://raw.githubusercontent.com/supprise0408/V2RayAggregator/master/sub/airport_merge_base64.txt|https://raw.githubusercontent.com/supprise0408/V2RayAggregator/master/sub/sub_merge_base64.txt",
     "enabled": true
   },
   {
