@@ -705,5 +705,12 @@
     "site": "https://github.com/kaoxindalao/v2raycheshi",
     "url": "https://raw.githubusercontent.com/kaoxindalao/v2raycheshi/main/v2raycheshi",
     "enabled": true
+  },
+  {
+    "id": 101,
+    "remarks": "musabaguz/akun-vmess",
+    "site": "https://github.com/musabaguz/akun-vmess",
+    "url": "https://raw.githubusercontent.com/musabaguz/akun-vmess/main/AKUN3UPDATE.yaml|https://raw.githubusercontent.com/musabaguz/akun-vmess/main/AKUN4UPDATE.yaml",
+    "enabled": true
   }
 ]
