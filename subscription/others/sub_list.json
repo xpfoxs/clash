@@ -1,17 +1,17 @@
 [
   {
     "id": 0,
-    "remarks": "pojiezhiyuanjun/freev2",
-    "site": "https://github.com/pojiezhiyuanjun/freev2",
-    "url": "https://raw.githubusercontent.com/pojiezhiyuanjun/freev2/master/0308clash.yml",
-    "enabled": false
+    "remarks": "JumperShao/subscription",
+    "site": "https://github.com/JumperShao/subscription",
+    "url": "https://raw.githubusercontent.com/JumperShao/subscription/main/v2ray",
+    "enabled": true
   },
   {
     "id": 1,
-    "remarks": "chfchf0306/clash",
-    "site": "https://github.com/chfchf0306/clash",
-    "url": "https://raw.githubusercontent.com/chfchf0306/clash/main/clash",
-    "enabled": false
+    "remarks": "VpnNetwork01/vpn-net",
+    "site": "https://github.com/VpnNetwork01/vpn-net",
+    "url": "https://raw.githubusercontent.com/VpnNetwork01/vpn-net/main/README.md",
+    "enabled": true
   },
   {
     "id": 2,
@@ -71,10 +71,10 @@
   },
   {
     "id": 10,
-    "remarks": "umelabs/node.umelabs.dev",
-    "site": "https://github.com/umelabs/node.umelabs.dev",
-    "url": "https://raw.githubusercontent.com/umelabs/node.umelabs.dev/master/Subscribe/v2ray.md|https://raw.githubusercontent.com/umelabs/node.umelabs.dev/master/Subscribe/SSR.md",
-    "enabled": false
+    "remarks": "blowm1k/cht",
+    "site": "https://github.com/blowm1k/cht",
+    "url": "https://raw.githubusercontent.com/blowm1k/cht/main/README.md",
+    "enabled": true
   },
   {
     "id": 11,
@@ -141,10 +141,10 @@
   },
   {
     "id": 20,
-    "remarks": "GreenFishStudio/GreenFish",
-    "site": "https://github.com/GreenFishStudio/GreenFish",
-    "url": "https://raw.githubusercontent.com/GreenFishStudio/GreenFish/master/Subscription/GreenFishYYDS",
-    "enabled": false
+    "remarks": "lflflf999/0516",
+    "site": "https://github.com/lflflf999/0516",
+    "url": "https://raw.githubusercontent.com/lflflf999/0516/main/BX-JD",
+    "enabled": true
   },
   {
     "id": 21,
@@ -540,8 +540,8 @@
   },
   {
     "id": 77,
-    "remarks": "netlify",
-    "site": "netlify.app",
+    "remarks": "dongyubin/Free-AppleId-Serve",
+    "site": "https://github.com/dongyubin/Free-AppleId-Serve",
     "url": "https://jiang.netlify.app/|https://muma16fx.netlify.app/|https://www.liesauer.net/yogurt/subscribe?ACCESS_TOKEN=DAYxR3mMaZAsaqUb|https://qiaomenzhuanfx.netlify.app/|https://youlianboshi.netlify.app/|https://raw.githubusercontent.com/eycorsican/rule-sets/master/kitsunebi_sub|https://raw.githubusercontent.com/voken100g/AutoSSR/master/online|https://raw.githubusercontent.com/voken100g/AutoSSR/master/recent|https://raw.fastgit.org/codingbox/Free-Node-Merge/main/node.txt|https://raw.githubusercontent.com/adiwzx/freenode/main/adispeed.txt|https://hyt-allen-xu.netlify.app/|",
     "enabled": true
   },
