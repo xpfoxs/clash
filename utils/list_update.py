@@ -33,7 +33,7 @@ def check_url(url):  # 判断远程远程链接是否已经更新
 
 class update_url():
 
-    def update_main(update_enable_list=[11, 25, 34, 43, 54, 57, 76]):
+    def update_main(update_enable_list=[11, 25, 34, 43, 54, 57, 58, 76]):
         if len(update_enable_list) > 0:
             for id in update_enable_list:
                 status = update_url.update(id)
@@ -171,24 +171,27 @@ class update_url():
 
         elif id == 57:
             today = datetime.today().strftime('%Y%m%d')
-            month = datetime.today().strftime('%m') + '/'
-            year = datetime.today().strftime('%Y') + '/'
+            month = datetime.today().strftime('%m')
+            year = datetime.today().strftime('%Y')
             front_url = 'https://clashnode.com/wp-content/uploads/'
             end_url = '.txt'
-            url_update = front_url + year + month + today + end_url
+            url_update = front_url + year + '/' + month  + '/' + today + end_url
             if check_url(url_update):
                 return [id, url_update]
             else:
                 return [id, 404]
 
-        # elif id == 67:
-        #     today = datetime.today().strftime('%m%d')
-        #     front_url = 'https://raw.githubusercontent.com/Strongmiao168/v2ray/main/'
-        #     url_update = front_url + today
-        #     if check_url(url_update):
-        #         return [id, url_update]
-        #     else:
-        #         return [id, 404]
+        elif id == 58:
+            today = datetime.today().strftime('%d')
+            year = datetime.today().strftime('%Y')
+            month = datetime.today().strftime('%m')
+            front_url = 'https://freenode.me/wp-content/uploads/'
+            end_url = '8.txt'
+            url_update = front_url + year + '/' + month + '/' + today + end_url
+            if check_url(url_update):
+                return [id, url_update]
+            else:
+                return [id, 404]
 
         elif id == 76:
             url_raw = ['https://raw.githubusercontent.com/cdddbc/getAirport/main/config/sublist_free','https://raw.githubusercontent.com/cdddbc/getAirport/main/config/sublist_mining']
