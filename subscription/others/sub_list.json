@@ -442,10 +442,10 @@
   },
   {
     "id": 63,
-    "remarks": "ggborr/aweikeji",
-    "site": "https://github.com/ggborr/aweikeji",
-    "url": "https://raw.githubusercontent.com/ggborr/aweikeji/main/11cl-youtube-aweikeji",
-    "enabled": false
+    "remarks": "paimon node",
+    "site": "https://sub.pmsub.me/",
+    "url": "https://sub.pmsub.me/base64",
+    "enabled": true
   },
   {
     "id": 64,
