@@ -463,17 +463,17 @@
   },
   {
     "id": 66,
-    "remarks": "peasoft/NoMoreWalls",
-    "site": "https://github.com/peasoft/NoMoreWalls",
-    "url": "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt",
-    "enabled": false
+    "remarks": "wlh17zy/SubLink_To_World",
+    "site": "https://github.com/wlh17zy/SubLink_To_World",
+    "url": "https://raw.githubusercontent.com/wlh17zy/SubLink_To_World/main/Clash%20for%20windows.yml",
+    "enabled": true
   },
   {
     "id": 67,
-    "remarks": "Strongmiao168/v2ray",
-    "site": "https://github.com/Strongmiao168/v2ray",
-    "url": "https://raw.githubusercontent.com/Strongmiao168/v2ray/main/0308",
-    "enabled": false
+    "remarks": "ccavq/Jiedian",
+    "site": "https://github.com/ccavq/Jiedian",
+    "url": "https://raw.githubusercontent.com/ccavq/Jiedian/main/20210131",
+    "enabled": true
   },
   {
     "id": 68,
