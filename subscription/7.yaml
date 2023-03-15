@@ -1,0 +1,3 @@
+proxies:
+  - {name: "[🇦🇶]104.21.235.172:443(8ebdd130-be09-11ed-b677-1239d0255272)", server: 104.21.235.172, port: 443, type: trojan, password: 8ebdd130-be09-11ed-b677-1239d0255272, sni: id-1.test3.net}
+  - {name: "[🇦🇶]104.21.235.172:443(29504560-bdae-11ed-b03e-1239d0255272)", server: 104.21.235.172, port: 443, type: trojan, password: 29504560-bdae-11ed-b03e-1239d0255272, sni: sg2-trojan.bonds.id}
