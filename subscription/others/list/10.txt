@@ -1,3 +1,2 @@
 trojan://6ea0337d-ee2e-b495-0c0e-48db8524b39c@awsjp.blowm1k.club:443?allowInsecure=0&sni=awsjp.blowm1k.club#%5B%F0%9F%87%AF%F0%9F%87%B5%5Dawsjp.blowm1k.club%3A443%286ea0337d-ee2e-b495-0c0e-48db8524b39c%29
-trojan://71964d62-9d17-45d7-ada5-2db8643dbe28@sg.blowm1k.club:443?allowInsecure=0&sni=sg.blowm1k.club#%5B%F0%9F%87%B8%F0%9F%87%AC%5Dsg.blowm1k.club%3A443%2871964d62-9d17-45d7-ada5-2db8643dbe28%29
 trojan://38c24a69-54b8-4b69-be5c-894d51d8354c@rh.blowm1k.club:443?allowInsecure=0&sni=rh.blowm1k.club#%5B%F0%9F%87%BA%F0%9F%87%B8%5Drh.blowm1k.club%3A443%2838c24a69-54b8-4b69-be5c-894d51d8354c%29
