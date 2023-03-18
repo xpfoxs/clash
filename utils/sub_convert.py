@@ -456,7 +456,10 @@ class sub_convert():
                         continue
                     else:
                         yaml_url.setdefault('server', server_address)
-                    yaml_url.setdefault('port', config_second_list[-1])
+                    if config_second_list[-1].isdigit():
+                        yaml_url.setdefault('port', config_second_list[-1])
+                    else:
+                        continue
                     yaml_url.setdefault('type', 'ss')
                     if config_first_decode_list[0] in ss_cipher:
                         yaml_url.setdefault('cipher', config_first_decode_list[0])
