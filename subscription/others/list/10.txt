@@ -1,1 +1,2 @@
 trojan://a98f320a-f8c5-5bc0-be60-1bf4b7be9498@oracle.blowm1k.club:443?allowInsecure=0&sni=oracle.blowm1k.club#%5B%F0%9F%87%B0%F0%9F%87%B7%5Doracle.blowm1k.club%3A443%28a98f320a-f8c5-5bc0-be60-1bf4b7be9498%29
+trojan://4132b384-b468-4ee4-af29-d8419964d4ce@ora.blowm1k.club:443?allowInsecure=0&sni=ora.blowm1k.club#%5B%F0%9F%87%B0%F0%9F%87%B7%5Dora.blowm1k.club%3A443%284132b384-b468-4ee4-af29-d8419964d4ce%29
