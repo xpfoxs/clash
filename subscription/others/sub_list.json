@@ -45,7 +45,7 @@
     "id": 6,
     "remarks": "colatiger/v2ray-nodes",
     "site": "https://github.com/colatiger/v2ray-nodes",
-    "url": "https://proxy.huwo.top/hwv.txt",
+    "url": "https://proxy.huwo.top/hv.txt",
     "enabled": true
   },
   {
@@ -94,7 +94,7 @@
     "id": 13,
     "remarks": "abbasdvd3/node",
     "site": "https://github.com/abbasdvd3/node",
-    "url": "https://raw.githubusercontent.com/abbasdvd3/node/main/ssr.abbasdvd.yaml",
+    "url": "https://free.iam7.tk/clash/proxies",
     "enabled": true
   },
   {
@@ -466,7 +466,7 @@
     "remarks": "wlh17zy/SubLink_To_World",
     "site": "https://github.com/wlh17zy/SubLink_To_World",
     "url": "https://raw.githubusercontent.com/wlh17zy/SubLink_To_World/main/Clash%20for%20windows.yml",
-    "enabled": true
+    "enabled": false
   },
   {
     "id": 67,
