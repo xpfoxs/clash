@@ -621,7 +621,7 @@ class sub_convert():
                                     yaml_url.setdefault('grpc-opts', {}).setdefault('grpc-service-name', config[12:])
                             else:
                                 if 'alpn=' in config:
-                                    yaml_url.setdefault('alpn', '[' + config[5:] + ']')
+                                    yaml_url.setdefault('alpn', config[5:].replace("'",'"'))
                         if 'network' in yaml_url.keys():
                             if yaml_url['network'] == 'ws':
                                 if 'ws_opts' not in yaml_url.keys():
@@ -648,5 +648,5 @@ class sub_convert():
 
         return yaml_content
 if __name__ == '__main__':
-    sub_convert.format("trojan://011eb011-c68e-4f92-80eb-f9bbef707bef@us2.trojanvh.xyz:80#%5B%E7%BE%8E%E5%9B%BDTROJAN%5DUS2.TROJANVH.XYZ%3A80")
-    # sub_convert.yaml_encode(["trojan://011eb011-c68e-4f92-80eb-f9bbef707bef@us2.trojanvh.xyz:80#%5B%E7%BE%8E%E5%9B%BDTROJAN%5DUS2.TROJANVH.XYZ%3A80"])
+    # sub_convert.format("trojan://011eb011-c68e-4f92-80eb-f9bbef707bef@us2.trojanvh.xyz:80#%5B%E7%BE%8E%E5%9B%BDTROJAN%5DUS2.TROJANVH.XYZ%3A80")
+    sub_convert.yaml_encode(["trojan://3ce74a1a-d01c-48bc-bba2-f643ff70667c@catlog.flareai.science:13443?alpn=['h2']&peer=106-110-192-225.d.cjjd20.com&allowInsecure=True#%5B%F0%9F%87%A8%F0%9F%87%B3%5Dcatlog.flareai.science%3A13443%283ce74a1a-d01c-48bc-bba2-f643ff70667c%29"])
