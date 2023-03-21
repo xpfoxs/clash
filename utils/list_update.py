@@ -33,11 +33,15 @@ def check_url(url):  # 判断远程远程链接是否已经更新
 
 class update_url():
 
-    def update_main(update_enable_list=[11, 25, 34, 43, 54, 57, 58, 76]):
-        if len(update_enable_list) > 0:
-            for id in update_enable_list:
-                status = update_url.update(id)
-                update_url.update_write(id, status[1], status[1])
+    def update_main():
+
+        if len(raw_list) > 0:
+            for index in range(len(raw_list)):
+                status = update_url.update(raw_list[index]['id'])
+                if status is not None:
+                    update_url.update_write(status[0], status[1])
+                else:
+                    continue
             updated_list = json.dumps(
                 raw_list, sort_keys=False, indent=2, ensure_ascii=False)
             file = open(sub_list_json, 'w', encoding='utf-8')
@@ -46,8 +50,8 @@ class update_url():
         else:
             print('Don\'t need to be updated.')
 
-    def update_write(id, status, updated_url):
-        if status == 404:
+    def update_write(id, updated_url):
+        if updated_url == 404:
             print(f'Id {id} URL 无可用更新\n')
         else:
             if updated_url != raw_list[id]['url']:
@@ -187,6 +191,30 @@ class update_url():
             month = datetime.today().strftime('%m')
             front_url = 'https://freenode.me/wp-content/uploads/'
             end_url = '8.txt'
+            url_update = front_url + year + '/' + month + '/' + today + end_url
+            if check_url(url_update):
+                return [id, url_update]
+            else:
+                return [id, 404]
+            
+        elif id == 66:
+            today = datetime.today().strftime('%Y%m%d')
+            year = datetime.today().strftime('%Y')
+            month = datetime.today().strftime('%m')
+            front_url = 'https://oneclash.cc/wp-content/uploads/'
+            end_url = '.txt'
+            url_update = front_url + year + '/' + month + '/' + today + end_url
+            if check_url(url_update):
+                return [id, url_update]
+            else:
+                return [id, 404]
+            
+        elif id == 68:
+            today = datetime.today().strftime('%Y%m%d')
+            year = datetime.today().strftime('%Y')
+            month = datetime.today().strftime('%m')
+            front_url = 'https://wefound.cc/freenode/'
+            end_url = '.txt'
             url_update = front_url + year + '/' + month + '/' + today + end_url
             if check_url(url_update):
                 return [id, url_update]
