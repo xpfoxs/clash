@@ -1,9 +1,9 @@
 [
   {
     "id": 0,
-    "remarks": "JumperShao/subscription",
-    "site": "https://github.com/JumperShao/subscription",
-    "url": "https://raw.githubusercontent.com/JumperShao/subscription/main/v2ray",
+    "remarks": "proxypool",
+    "site": "https://proxy.yugogo.xyz",
+    "url": "https://proxy.yugogo.xyz/clash/proxies",
     "enabled": true
   },
   {
