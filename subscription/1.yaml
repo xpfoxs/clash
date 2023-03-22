@@ -2445,10 +2445,10 @@ proxies:
   - {name: "[🇦🇶]0319ru99.fans8.xyz:443(5c70da5d-e641-3bf8-b7dc-5babd843ff3c)", server: 0319ru99.fans8.xyz, port: 443, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, network: ws, tls: true, ws-opts: {path: /nmsl, headers: {host: 0319ru99.fans8.xyz}}}
   - {name: "[🇦🇶]0320ru1702.fans8.xyz:80(5c70da5d-e641-3bf8-b7dc-5babd843ff3c)", server: 0320ru1702.fans8.xyz, port: 80, type: vmess, uuid: 5c70da5d-e641-3bf8-b7dc-5babd843ff3c, alterId: 2, cipher: auto, network: ws, tls: false, ws-opts: {path: /v2ray, headers: {host: 0320ru1702.fans8.xyz}}}
   - {name: "[🇺🇸]142.202.48.7:3389(Y6R9pAtvxxzmGC)", server: 142.202.48.7, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "[🇨🇭]20.203.137.25:500(@VPNFolder)", server: 20.203.137.25, port: 500, type: ss, cipher: aes-128-gcm, password: @VPNFolder}
-  - {name: "[🇺🇸]20.25.107.72:500(@VPNFolder)", server: 20.25.107.72, port: 500, type: ss, cipher: aes-128-gcm, password: @VPNFolder}
-  - {name: "[🇺🇸]52.161.38.63:500(@VPNFolder)", server: 52.161.38.63, port: 500, type: ss, cipher: aes-128-gcm, password: @VPNFolder}
-  - {name: "[🇨🇦]52.232.130.180:500(@VPNFolder)", server: 52.232.130.180, port: 500, type: ss, cipher: aes-128-gcm, password: @VPNFolder}
+  - {name: "[🇨🇭]20.203.137.25:500(VPNFolder)", server: 20.203.137.25, port: 500, type: ss, cipher: aes-128-gcm, password: VPNFolder}
+  - {name: "[🇺🇸]20.25.107.72:500(VPNFolder)", server: 20.25.107.72, port: 500, type: ss, cipher: aes-128-gcm, password: VPNFolder}
+  - {name: "[🇺🇸]52.161.38.63:500(VPNFolder)", server: 52.161.38.63, port: 500, type: ss, cipher: aes-128-gcm, password: VPNFolder}
+  - {name: "[🇨🇦]52.232.130.180:500(VPNFolder)", server: 52.232.130.180, port: 500, type: ss, cipher: aes-128-gcm, password: VPNFolder}
   - {name: "[🇭🇰]20.205.109.227:10021(d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f)", server: 20.205.109.227, port: 10021, type: vmess, uuid: d6a3f7ed-5d0d-323e-b092-5c1fdeadb34f, alterId: 0, cipher: auto, network: ws, tls: true, ws-opts: {path: /v2ray, headers: {host: t.me/vpnhat}}}
   - {name: "[🇳🇱]au.slotheve.ml:443(au)", server: au.slotheve.ml, port: 443, type: trojan, password: au}
   - {name: "[🇺🇸]45.63.62.49:52795(2813c98c-a8ff-11ec-a169-560003ea3b3d)", server: 45.63.62.49, port: 52795, type: vmess, uuid: 2813c98c-a8ff-11ec-a169-560003ea3b3d, alterId: 0, cipher: auto, network: ws, tls: false, ws-opts: {path: /xEWiUseL/, headers: {host: 45.63.62.49}}}
