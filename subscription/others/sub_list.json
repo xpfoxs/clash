@@ -71,9 +71,9 @@
   },
   {
     "id": 10,
-    "remarks": "blowm1k/cht",
-    "site": "https://github.com/blowm1k/cht",
-    "url": "https://raw.githubusercontent.com/blowm1k/cht/main/README.md",
+    "remarks": "proxypool1999.banyunxiaoxi.icu",
+    "site": "https://proxypool1999.banyunxiaoxi.icu",
+    "url": "https://proxypool1999.banyunxiaoxi.icu/clash/proxies",
     "enabled": true
   },
   {
@@ -92,8 +92,8 @@
   },
   {
     "id": 13,
-    "remarks": "proxypool",
-    "site": "http://localhost",
+    "remarks": "free.iam7.tk",
+    "site": "https://free.iam7.tk",
     "url": "https://free.iam7.tk/clash/proxies",
     "enabled": true
   },
@@ -120,9 +120,9 @@
   },
   {
     "id": 17,
-    "remarks": "Jsnzkpg/Jsnzkpg",
-    "site": "https://github.com/Jsnzkpg/Jsnzkpg",
-    "url": "https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg",
+    "remarks": "pi.scntvb.ml",
+    "site": "http://pi.scntvb.ml:8080",
+    "url": "http://pi.scntvb.ml:8080/clash/proxies",
     "enabled": true
   },
   {
@@ -246,9 +246,9 @@
   },
   {
     "id": 35,
-    "remarks": "githubvpn007/v2rayNvpn",
-    "site": "https://github.com/githubvpn007/v2rayNvpn",
-    "url": "https://9527521.xyz/pubconfig/hD45GzVY9viTd6ef",
+    "remarks": "da.aosijdqioj.tk",
+    "site": "https://da.aosijdqioj.tk",
+    "url": "https://da.aosijdqioj.tk/clash/proxies",
     "enabled": true
   },
   {
@@ -491,8 +491,8 @@
   },
   {
     "id": 70,
-    "remarks": "proxypool",
-    "site": "http://localhost",
+    "remarks": "152.70.121.247",
+    "site": "http://152.70.121.247:8080",
     "url": "http://152.70.121.247:8080/clash/proxies",
     "enabled": true
   },
@@ -547,8 +547,8 @@
   },
   {
     "id": 78,
-    "remarks": "proxypool",
-    "site": "http://localhost",
+    "remarks": "47.87.191.86",
+    "site": "http://47.87.191.86:8082",
     "url": "http://47.87.191.86:8082/clash/proxies",
     "enabled": true
   },
@@ -568,15 +568,15 @@
   },
   {
     "id": 81,
-    "remarks": "proxypool",
-    "site": "http://localhost",
+    "remarks": "freemby.tk",
+    "site": "https://freemby.tk",
     "url": "https://freemby.tk/clash/proxies",
     "enabled": true
   },
   {
     "id": 82,
-    "remarks": "proxypool",
-    "site": "http://localhost",
+    "remarks": "146.56.117.83",
+    "site": "http://146.56.117.83:8000",
     "url": "http://146.56.117.83:8000/clash/proxies",
     "enabled": true
   },
@@ -603,9 +603,9 @@
   },
   {
     "id": 86,
-    "remarks": "harryyang520/v2ray",
-    "site": "https://github.com/harryyang520/v2ray",
-    "url": "https://raw.githubusercontent.com/harryyang520/v2ray/main/harry|https://raw.githubusercontent.com/harryyang520/v2ray/main/clash",
+    "remarks": "rvorch.treze.cc",
+    "site": "https://rvorch.treze.cc",
+    "url": "https://rvorch.treze.cc/clash/proxies",
     "enabled": true
   },
   {
@@ -638,9 +638,9 @@
   },
   {
     "id": 91,
-    "remarks": "flyingiq/v2ray",
-    "site": "https://github.com/flyingiq/v2ray",
-    "url": "https://raw.githubusercontent.com/flyingiq/v2ray/main/v2ray",
+    "remarks": "193.123.84.62",
+    "site": "https://193.123.84.62",
+    "url": "https://193.123.84.62/clash/proxies",
     "enabled": true
   },
   {
@@ -687,9 +687,9 @@
   },
   {
     "id": 98,
-    "remarks": "hangman1998/v2ray-servers",
-    "site": "https://github.com/hangman1998/v2ray-servers",
-    "url": "https://raw.githubusercontent.com/hangman1998/v2ray-servers/main/azad.txt",
+    "remarks": "101.64.235.179",
+    "site": "https://101.64.235.179:8443",
+    "url": "https://101.64.235.179:8443/clash/proxies",
     "enabled": true
   },
   {
@@ -708,9 +708,9 @@
   },
   {
     "id": 101,
-    "remarks": "musabaguz/akun-vmess",
-    "site": "https://github.com/musabaguz/akun-vmess",
-    "url": "https://raw.githubusercontent.com/musabaguz/akun-vmess/main/AKUN3UPDATE.yaml|https://raw.githubusercontent.com/musabaguz/akun-vmess/main/AKUN4UPDATE.yaml",
+    "remarks": "101.64.235.243",
+    "site": "https://101.64.235.243:8443",
+    "url": "https://101.64.235.243:8443/clash/proxies",
     "enabled": true
   },
   {
@@ -725,6 +725,13 @@
     "remarks": "nextz06/config",
     "site": "https://github.com/nextz06/config",
     "url": "https://raw.githubusercontent.com/nextz06/config/main/singapura.yaml",
+    "enabled": true
+  },
+  {
+    "id": 103,
+    "remarks": "101.64.235.156",
+    "site": "https://101.64.235.156:8443",
+    "url": "https://101.64.235.156:8443/clash/proxies",
     "enabled": true
   }
 ]
