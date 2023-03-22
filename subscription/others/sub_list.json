@@ -733,5 +733,26 @@
     "site": "https://101.64.235.156:8443",
     "url": "https://101.64.235.156:8443/clash/proxies",
     "enabled": true
+  },
+  {
+    "id": 104,
+    "remarks": "168.138.45.251",
+    "site": "http://168.138.45.251",
+    "url": "http://168.138.45.251/clash/proxies",
+    "enabled": true
+  },
+  {
+    "id": 105,
+    "remarks": "81.70.255.175",
+    "site": "http://81.70.255.175:8080",
+    "url": "http://81.70.255.175:8080/clash/proxies",
+    "enabled": true
+  },
+  {
+    "id": 106,
+    "remarks": "proxies.haisto.cn",
+    "site": "https://proxies.haisto.cn",
+    "url": "https://proxies.haisto.cn/clash/proxies",
+    "enabled": true
   }
 ]
