@@ -78,9 +78,9 @@
   },
   {
     "id": 11,
-    "remarks": "halfaaa/Free",
-    "site": "https://github.com/halfaaa/Free",
-    "url": "https://raw.githubusercontent.com/halfaaa/Free/main/1.30.2023.txt",
+    "remarks": "free.jingfu.cf",
+    "site": "https://free.jingfu.cf",
+    "url": "https://free.jingfu.cf/clash/proxies",
     "enabled": true
   },
   {
@@ -753,6 +753,27 @@
     "remarks": "proxies.haisto.cn",
     "site": "https://proxies.haisto.cn",
     "url": "https://proxies.haisto.cn/clash/proxies",
+    "enabled": true
+  },
+  {
+    "id": 107,
+    "remarks": "proxypool.6993300.com",
+    "site": "https://proxypool.6993300.com",
+    "url": "https://proxypool.6993300.com/clash/proxies",
+    "enabled": true
+  },
+  {
+    "id": 108,
+    "remarks": "123.60.147.120",
+    "site": "https://123.60.147.120",
+    "url": "https://123.60.147.120/clash/proxies",
+    "enabled": true
+  },
+  {
+    "id": 109,
+    "remarks": "proxy.yiun.xyz",
+    "site": "https://proxy.yiun.xyz",
+    "url": "https://proxy.yiun.xyz/clash/proxies",
     "enabled": true
   }
 ]

@@ -72,20 +72,20 @@ class update_url():
         #     url_update = front_url + yesterday + end_url
         #     return [id, url_update]
 
-        if id == 11:
-            today = datetime.today()
-            front_url = 'https://raw.githubusercontent.com/halfaaa/Free/main/'
-            end_url = '.txt'
-            url_update = front_url + \
-                str(today.month) + "." + str(today.day) + \
-                "." + str(today.year) + end_url
-            if check_url(url_update):
-                return [id, url_update]
-            else:
-                return [id, 404]
+        # if id == 11:
+        #     today = datetime.today()
+        #     front_url = 'https://raw.githubusercontent.com/halfaaa/Free/main/'
+        #     end_url = '.txt'
+        #     url_update = front_url + \
+        #         str(today.month) + "." + str(today.day) + \
+        #         "." + str(today.year) + end_url
+        #     if check_url(url_update):
+        #         return [id, url_update]
+        #     else:
+        #         return [id, 404]
 
         
-        elif id == 25:
+        if id == 25:
             today = datetime.today().strftime('%Y%m%d')
             month = datetime.today().strftime('%m') + '/'
             year = datetime.today().strftime('%Y') + '/'
