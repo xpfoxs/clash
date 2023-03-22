@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "remarks": "proxypool",
+    "remarks": "proxy.yugogo.xyz",
     "site": "https://proxy.yugogo.xyz",
     "url": "https://proxy.yugogo.xyz/clash/proxies",
     "enabled": true
