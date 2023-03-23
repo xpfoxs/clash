@@ -253,9 +253,9 @@
   },
   {
     "id": 36,
-    "remarks": "bgenting/v2",
-    "site": "https://github.com/bgenting/v2",
-    "url": "https://raw.githubusercontent.com/bgenting/v2/V3/22-5x-Xx.yaml",
+    "remarks": "58.35.228.202",
+    "site": "https://58.35.228.202:8084",
+    "url": "https://58.35.228.202:8084/clash/proxies",
     "enabled": true
   },
   {
@@ -774,6 +774,13 @@
     "remarks": "proxy.yiun.xyz",
     "site": "https://proxy.yiun.xyz",
     "url": "https://proxy.yiun.xyz/clash/proxies",
+    "enabled": true
+  },
+  {
+    "id": 110,
+    "remarks": "rvorch.treze.cc",
+    "site": "https://rvorch.treze.cc",
+    "url": "https://rvorch.treze.cc/clash/proxies",
     "enabled": true
   }
 ]
