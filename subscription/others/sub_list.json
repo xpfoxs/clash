@@ -782,5 +782,19 @@
     "site": "https://rvorch.treze.cc",
     "url": "https://rvorch.treze.cc/clash/proxies",
     "enabled": true
+  },
+  {
+    "id": 111,
+    "remarks": "free.dsdog.tk",
+    "site": "https://free.dsdog.tk",
+    "url": "https://free.dsdog.tk/clash/proxies",
+    "enabled": true
+  },
+  {
+    "id": 112,
+    "remarks": "klausvpn.posyao.com",
+    "site": "http://klausvpn.posyao.com",
+    "url": "http://klausvpn.posyao.com/clash/proxies",
+    "enabled": true
   }
 ]
