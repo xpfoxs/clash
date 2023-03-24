@@ -649,5 +649,6 @@ class sub_convert():
 
         return yaml_content
 if __name__ == '__main__':
-    sub_convert.format("ss://YWVzLTI1Ni1nY206NTA3MzY0ZmI3OTFlQGZuNjAwbWxpbmVzMDIxLnN2Y2xpbmUuY29tOjk5NQ?v2ray-plugin=eyJwYXRoIjoiXC9rcG56eXhzaiIsImhvc3QiOiJmbjYwMG1saW5lczAyMS5zdmNsaW5lLmNvbSIsIm1vZGUiOiJ3ZWJzb2NrZXQiLCJ0bHMiOnRydWV9#%5B%E5%8F%B0%E6%B9%BESS%2A%5DFN600MLINES021.SVCLINE.COM%3A995")
+    # sub_convert.get_node_from_sub("https://proxies.haisto.cn/clash/proxies")
+    # sub_convert.format("ss://YWVzLTI1Ni1nY206NTA3MzY0ZmI3OTFlQGZuNjAwbWxpbmVzMDIxLnN2Y2xpbmUuY29tOjk5NQ?v2ray-plugin=eyJwYXRoIjoiXC9rcG56eXhzaiIsImhvc3QiOiJmbjYwMG1saW5lczAyMS5zdmNsaW5lLmNvbSIsIm1vZGUiOiJ3ZWJzb2NrZXQiLCJ0bHMiOnRydWV9#%5B%E5%8F%B0%E6%B9%BESS%2A%5DFN600MLINES021.SVCLINE.COM%3A995")
     # sub_convert.yaml_encode(["trojan://3ce74a1a-d01c-48bc-bba2-f643ff70667c@catlog.flareai.science:13443?alpn=['h2']&peer=106-110-192-225.d.cjjd20.com&allowInsecure=True#%5B%F0%9F%87%A8%F0%9F%87%B3%5Dcatlog.flareai.science%3A13443%283ce74a1a-d01c-48bc-bba2-f643ff70667c%29"])
