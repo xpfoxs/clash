@@ -34,7 +34,7 @@ class sub_convert():
                     if 'No nodes were found!' in resp.text or url in resp.text:
                         print(f"Transform Server: {server_host}, responsed message: {resp.text}")
                         if server_host is server_host_list[-1]:
-                            print(f"Can not transform: {server_host}, downloading...\n")
+                            print(f"Can not transform: {url}, downloading...\n")
                             resp = s.get(url, verify=None, timeout=10)
                 node_list = resp.text
             except Exception:
