@@ -26,21 +26,20 @@ class sub_convert():
                 # 转换并获取订阅链接数据
                 for server_host in server_host_list:
                     converted_url = server_host+'/sub?target=mixed&url='+url_quote+'&list=true'
-                    # s = requests.Session()
-                    # s.mount('http://', HTTPAdapter(max_retries=3))
-                    # s.mount('https://', HTTPAdapter(max_retries=3))
-                    resp = requests.get(converted_url, timeout=10, verify=None)
-                    # resp = s.get(converted_url, verify=None, timeout=10)
+                    s = requests.Session()
+                    s.mount('http://', HTTPAdapter(max_retries=3))
+                    s.mount('https://', HTTPAdapter(max_retries=3))
+                    resp = s.get(converted_url, timeout=10)
                     # 如果解析出错，将原始链接内容拷贝下来
                     if 'No nodes were found!' in resp.text or url in resp.text:
                         print(f"Transform Server: {server_host}, responsed message: {resp.text}")
                         if server_host is server_host_list[-1]:
-                            print(f"Can not transform: {server_host}, downloading...")
+                            print(f"Can not transform: {server_host}, downloading...\n")
                             resp = s.get(url, verify=None, timeout=10)
                 node_list = resp.text
-            except Exception as error:
+            except Exception:
                 # 链接有问题，直接返回原始错误
-                print(f'网络错误，检查订阅转换服务器是否失效: {converted_url}\n{error}')
+                print(f'网络错误，检查订阅转换服务器是否失效: {url}\n')
                 continue
             # 改名
             node_list_formated = sub_convert.format(node_list)
