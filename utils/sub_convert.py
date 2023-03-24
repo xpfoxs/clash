@@ -29,13 +29,13 @@ class sub_convert():
                     s = requests.Session()
                     s.mount('http://', HTTPAdapter(max_retries=3))
                     s.mount('https://', HTTPAdapter(max_retries=3))
-                    resp = s.get(converted_url, timeout=10)
+                    resp = s.get(converted_url, timeout=6)
                     # 如果解析出错，将原始链接内容拷贝下来
                     if 'No nodes were found!' in resp.text or url in resp.text:
                         print(f"Transform Server: {server_host}, responsed message: {resp.text}")
                         if server_host is server_host_list[-1]:
                             print(f"Can not transform: {server_host}, downloading...")
-                            resp = s.get(url, timeout=10)
+                            resp = s.get(url, timeout=6)
                         continue
                     else:
                         break
