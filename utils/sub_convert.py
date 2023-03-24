@@ -119,7 +119,7 @@ class sub_convert():
                         if 'vmess://' in node_part:
                             node_del_head = node_part.replace('vmess://', '')
                             break
-                    node_json_raw = sub_convert.base64_decode(node_del_head).split("}")[0] + "}"
+                    node_json_raw = sub_convert.base64_decode(node_del_head)
                     if '"' in node_json_raw:
                         node_json = json.loads(node_json_raw)
                     else:
@@ -648,5 +648,5 @@ class sub_convert():
 
         return yaml_content
 if __name__ == '__main__':
-    # sub_convert.format("trojan://011eb011-c68e-4f92-80eb-f9bbef707bef@us2.trojanvh.xyz:80#%5B%E7%BE%8E%E5%9B%BDTROJAN%5DUS2.TROJANVH.XYZ%3A80")
-    sub_convert.yaml_encode(["trojan://3ce74a1a-d01c-48bc-bba2-f643ff70667c@catlog.flareai.science:13443?alpn=['h2']&peer=106-110-192-225.d.cjjd20.com&allowInsecure=True#%5B%F0%9F%87%A8%F0%9F%87%B3%5Dcatlog.flareai.science%3A13443%283ce74a1a-d01c-48bc-bba2-f643ff70667c%29"])
+    sub_convert.format("vmess://eyJwb3J0IjogMTI1NDMsICJjaXBoZXIiOiAiYXV0byIsICJ0bHMiOiB0cnVlLCAic2VydmVybmFtZSI6ICIxMDYtMTEwLTE5Mi0yMjUuZC5jampkMjAuY29tIiwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAiaDItb3B0cyI6IHsiaG9zdCI6IFsiMTA2LTExMC0xOTItMjI1LmQuY2pqZDIwLmNvbSJdLCAicGF0aCI6ICIvbHp1NHQ2dDVqN3FwNzJlYmVwMGMifSwgInYiOiAiMiIsICJwcyI6ICJbXHU0ZTJkXHU1NmZkVk1FU1MqKipdREVMSVZFUlkuRkxBUkVBSS5TSVRFOjEyNTQzIiwgImFkZCI6ICJkZWxpdmVyeS5mbGFyZWFpLnNpdGUiLCAiaWQiOiAiM2NlNzRhMWEtZDAxYy00OGJjLWJiYTItZjY0M2ZmNzA2NjdjIiwgInN5YyI6ICJhdXRvIiwgImFpZCI6IDAsICJhbGxvd0luc2VjdXJlIjogdHJ1ZSwgIm5ldCI6ICJoMiIsICJ0eXBlIjogInZtZXNzIn0=")
+    # sub_convert.yaml_encode(["trojan://3ce74a1a-d01c-48bc-bba2-f643ff70667c@catlog.flareai.science:13443?alpn=['h2']&peer=106-110-192-225.d.cjjd20.com&allowInsecure=True#%5B%F0%9F%87%A8%F0%9F%87%B3%5Dcatlog.flareai.science%3A13443%283ce74a1a-d01c-48bc-bba2-f643ff70667c%29"])
