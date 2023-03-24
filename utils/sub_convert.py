@@ -445,73 +445,98 @@ class sub_convert():
             elif 'ss://' in line and 'vless://' not in line and 'vmess://' not in line:
                 try:
                     ss_content = re.sub('ss://|\/', '', line)
-                    ss_content_array = re.split('@|\?|#', ss_content)
-                    yaml_url.setdefault('name', '"' + urllib.parse.unquote(ss_content_array[-1]) + '"')
-                    # include cipher password
-                    config_first_decode_list = sub_convert.base64_decode(ss_content_array[0]).split(':')
-                    # include server port
-                    config_second_list = ss_content_array[1].split(':')
-                    server_address = re.sub('\[|\]','',':'.join(config_second_list[:-1]))
-                    if "::" in server_address:
-                        continue
-                    else:
-                        yaml_url.setdefault('server', server_address)
-                    if config_second_list[-1].isdigit():
-                        yaml_url.setdefault('port', config_second_list[-1])
-                    else:
-                        continue
-                    yaml_url.setdefault('type', 'ss')
-                    if config_first_decode_list[0] in ss_cipher:
-                        yaml_url.setdefault('cipher', config_first_decode_list[0])
-                    else:
-                        continue
-                    server_password = re.sub('!str|!<str>|!<str| |\[|\]|{|}','',config_first_decode_list[1])
-                    if (server_password == ''):
-                        continue
-                    elif re.compile(r'^[-+]?[-0-9]\d*\.\d*|[-+]?\.?[0-9]\d*$').match(server_password):
-                        yaml_url.setdefault('password', '!<str> ' + server_password)
-                    else:
-                        yaml_url.setdefault('password', '"' + server_password + '"')
-                    if len(ss_content_array) >= 4:
-                        # include more server config
-                        parameters_raw = urllib.parse.unquote(ss_content_array[2])
-                        parameters = parameters_raw.split(';')
-                        # or 'plugin=' in parameter for parameter in parameters:
-                        if 'plugin=' in str(parameters):
-                            if 'obfs' in str(parameters):
-                                yaml_url.setdefault('plugin', 'obfs')
-                            elif 'v2ray-plugin' in str(parameters):
-                                yaml_url.setdefault('plugin', 'v2ray-plugin')
-                        for parameter in parameters:
+                    if '@' in ss_content:
+                        ss_content_array = re.split('@|\?|#', ss_content)
+                        yaml_url.setdefault('name', '"' + urllib.parse.unquote(ss_content_array[-1]) + '"')
+                        # include cipher password
+                        config_first_decode_list = sub_convert.base64_decode(ss_content_array[0]).split(':')
+                        # include server port
+                        config_second_list = ss_content_array[1].split(':')
+                        server_address = re.sub('\[|\]','',':'.join(config_second_list[:-1]))
+                        if "::" in server_address:
+                            continue
+                        else:
+                            yaml_url.setdefault('server', server_address)
+                        if config_second_list[-1].isdigit():
+                            yaml_url.setdefault('port', config_second_list[-1])
+                        else:
+                            continue
+                        yaml_url.setdefault('type', 'ss')
+                        if config_first_decode_list[0] in ss_cipher:
+                            yaml_url.setdefault('cipher', config_first_decode_list[0])
+                        else:
+                            continue
+                        server_password = re.sub('!str|!<str>|!<str| |\[|\]|{|}','',config_first_decode_list[1])
+                        if (server_password == ''):
+                            continue
+                        elif re.compile(r'^[-+]?[-0-9]\d*\.\d*|[-+]?\.?[0-9]\d*$').match(server_password):
+                            yaml_url.setdefault('password', '!<str> ' + server_password)
+                        else:
+                            yaml_url.setdefault('password', '"' + server_password + '"')
+                        if len(ss_content_array) >= 4:
+                            # include more server config
+                            parameters_raw = urllib.parse.unquote(ss_content_array[2])
+                            parameters = parameters_raw.split(';')
+                            # or 'plugin=' in parameter for parameter in parameters:
+                            if 'plugin=' in str(parameters):
+                                if 'obfs' in str(parameters):
+                                    yaml_url.setdefault('plugin', 'obfs')
+                                elif 'v2ray-plugin' in str(parameters):
+                                    yaml_url.setdefault('plugin', 'v2ray-plugin')
+                            for parameter in parameters:
+                                if 'plugin' in yaml_url.keys():
+                                    if 'obfs' in yaml_url['plugin']:
+                                        if 'obfs=' in parameter:
+                                            yaml_url.setdefault('plugin-opts', {}).setdefault('mode', parameter.split('=')[-1])
+                                        elif 'obfs-host=' in parameter:
+                                            yaml_url.setdefault('plugin-opts', {}).setdefault('host', re.sub('\[|\]|{|}','',parameter.split('=')[-1]))
+                                    elif 'v2ray-plugin' in yaml_url['plugin']:
+                                        if 'mode=' in parameter:
+                                            yaml_url.setdefault('plugin-opts', {}).setdefault('mode', parameter.split('=')[-1])
+                                        elif 'tls' in parameter:
+                                            yaml_url.setdefault('plugin-opts', {}).setdefault('tls', 'true')
+                                        elif 'mux' in parameter:
+                                            yaml_url.setdefault('plugin-opts', {}).setdefault('mux', 'true')
+                                        elif 'host=' in parameter:
+                                            yaml_url.setdefault('plugin-opts', {}).setdefault('host', parameter.split('=')[-1])
+                                        elif 'path=' in parameter:
+                                            if parameter.split('=')[-1] == '':
+                                                yaml_url.setdefault('plugin-opts', {}).setdefault('path', '/')
+                                            else:
+                                                yaml_url.setdefault('plugin-opts', {}).setdefault('path', parameter.split('=')[-1])
                             if 'plugin' in yaml_url.keys():
+                                if 'plugin-opts' not in yaml_url.keys():
+                                    yaml_url.setdefault('plugin-opts', {})
                                 if 'obfs' in yaml_url['plugin']:
-                                    if 'obfs=' in parameter:
-                                        yaml_url.setdefault('plugin-opts', {}).setdefault('mode', parameter.split('=')[-1])
-                                    elif 'obfs-host=' in parameter:
-                                        yaml_url.setdefault('plugin-opts', {}).setdefault('host', re.sub('\[|\]|{|}','',parameter.split('=')[-1]))
-                                elif 'v2ray-plugin' in yaml_url['plugin']:
-                                    if 'mode=' in parameter:
-                                        yaml_url.setdefault('plugin-opts', {}).setdefault('mode', parameter.split('=')[-1])
-                                    elif 'tls' in parameter:
-                                        yaml_url.setdefault('plugin-opts', {}).setdefault('tls', 'true')
-                                    elif 'mux' in parameter:
-                                        yaml_url.setdefault('plugin-opts', {}).setdefault('mux', 'true')
-                                    elif 'host=' in parameter:
-                                        yaml_url.setdefault('plugin-opts', {}).setdefault('host', parameter.split('=')[-1])
-                                    elif 'path=' in parameter:
-                                        if parameter.split('=')[-1] == '':
-                                            yaml_url.setdefault('plugin-opts', {}).setdefault('path', '/')
-                                        else:
-                                            yaml_url.setdefault('plugin-opts', {}).setdefault('path', parameter.split('=')[-1])
-                        if 'plugin' in yaml_url.keys():
-                            if 'plugin-opts' not in yaml_url.keys():
-                                yaml_url.setdefault('plugin-opts', {})
-                            if 'obfs' in yaml_url['plugin']:
-                                if 'mode' not in yaml_url['plugin-opts'].keys() or not yaml_url['plugin-opts']['mode']:
-                                    yaml_url.setdefault('plugin-opts', {}).setdefault('mode', 'tls')
-                            if 'v2ray-plugin' in yaml_url['plugin']:
-                                if 'mode' not in yaml_url['plugin-opts'].keys() or not yaml_url['plugin-opts']['mode']:
-                                    yaml_url.setdefault('plugin-opts', {}).setdefault('mode', 'websocket')
+                                    if 'mode' not in yaml_url['plugin-opts'].keys() or not yaml_url['plugin-opts']['mode']:
+                                        yaml_url.setdefault('plugin-opts', {}).setdefault('mode', 'tls')
+                                if 'v2ray-plugin' in yaml_url['plugin']:
+                                    if 'mode' not in yaml_url['plugin-opts'].keys() or not yaml_url['plugin-opts']['mode']:
+                                        yaml_url.setdefault('plugin-opts', {}).setdefault('mode', 'websocket')
+                    else:
+                        ss_content_array = ss_content.split("#")
+                        ss_content_head = sub_convert.base64_decode(ss_content_array[0])
+                        ss_content_head_array = re.split(':|@',ss_content_head)
+                        yaml_url.setdefault('name', '"' + urllib.parse.unquote(ss_content_array[-1]) + '"')
+                        server_address = re.sub('\[|\]','',ss_content_head_array[-2])
+                        if "::" in server_address:
+                            continue
+                        else:
+                            yaml_url.setdefault('server', server_address)
+                        if ss_content_head_array[-1].isdigit():
+                            yaml_url.setdefault('port', ss_content_head_array[-1])
+                        yaml_url.setdefault('type', 'ss')
+                        if ss_content_head_array[0] in ss_cipher:
+                            yaml_url.setdefault('cipher', ss_content_head_array[0])
+                        else:
+                            continue
+                        server_password = re.sub('!str|!<str>|!<str| |\[|\]|{|}','',ss_content_head_array[1])
+                        if (server_password == ''):
+                            continue
+                        elif re.compile(r'^[-+]?[-0-9]\d*\.\d*|[-+]?\.?[0-9]\d*$').match(server_password):
+                            yaml_url.setdefault('password', '!<str> ' + server_password)
+                        else:
+                            yaml_url.setdefault('password', '"' + server_password + '"')
                 except Exception as err:
                     print(f'yaml_encode 解析 ss: {line}\n节点发生错误: {err}')
                     continue
@@ -649,5 +674,5 @@ class sub_convert():
         return yaml_content
 if __name__ == '__main__':
     # sub_convert.get_node_from_sub("https://58.35.228.202:8084/clash/proxies")
-    sub_convert.format("ss://YWVzLTEyOC1nY206M2U3NjBmZmQtZGY0Ny00Y2YyLWI3NTMtMjQ4MjYyOTcwYjhlQHVzMi5saW5naHVuMy54eXo6NDAwMDc=?country=8J-HuvCfh7ggVVM=#%5B%E4%B8%AD%E5%9B%BDSS%5DUS2.LINGHUN3.XYZ%3A40007")
-    # sub_convert.yaml_encode(["ss://YWVzLTEyOC1nY206M2U3NjBmZmQtZGY0Ny00Y2YyLWI3NTMtMjQ4MjYyOTcwYjhlQHVzMi5saW5naHVuMy54eXo6NDAwMDc=?country=8J-HuvCfh7ggVVM=#%5B%E4%B8%AD%E5%9B%BDSS%5DUS2.LINGHUN3.XYZ%3A40007"])
+    # sub_convert.format("ss://YWVzLTEyOC1nY206M2U3NjBmZmQtZGY0Ny00Y2YyLWI3NTMtMjQ4MjYyOTcwYjhlQHVzMi5saW5naHVuMy54eXo6NDAwMDc=?country=8J-HuvCfh7ggVVM=#%5B%E4%B8%AD%E5%9B%BDSS%5DUS2.LINGHUN3.XYZ%3A40007")
+    sub_convert.yaml_encode(["ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3MDkyOTBiOS04ZTE0LTQ2ZDYtYTU2Zi0yMDk3YWU4MTc5ZTJAY2F0bG9nLmZsYXJlYWkuc2NpZW5jZToxNTU0Mw==#%5B%E4%B8%AD%E5%9B%BDSS%5DCATLOG.FLAREAI.SCIENCE%3A15543"])
