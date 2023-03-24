@@ -465,13 +465,13 @@ class sub_convert():
                         yaml_url.setdefault('cipher', config_first_decode_list[0])
                     else:
                         continue
-                    server_password = re.sub('!str|!<str>|!<str| |\[|\]|{|}|\?|@','',config_first_decode_list[1])
+                    server_password = re.sub('!str|!<str>|!<str| |\[|\]|{|}','',config_first_decode_list[1])
                     if (server_password == ''):
                         continue
                     elif re.compile(r'^[-+]?[-0-9]\d*\.\d*|[-+]?\.?[0-9]\d*$').match(server_password):
                         yaml_url.setdefault('password', '!<str> ' + server_password)
                     else:
-                        yaml_url.setdefault('password', server_password)
+                        yaml_url.setdefault('password', '"' + server_password + '"')
                     if len(ss_content_array) >= 4:
                         # include more server config
                         parameters_raw = urllib.parse.unquote(ss_content_array[2])
@@ -554,7 +554,7 @@ class sub_convert():
                     if re.compile(r'^[-+]?[-0-9]\d*\.\d*|[-+]?\.?[0-9]\d*$').match(server_password):
                         yaml_url.setdefault('password', '!<str> ' + server_password)
                     else:
-                        yaml_url.setdefault('password', server_password)
+                        yaml_url.setdefault('password', '"' + server_password + '"')
                     if server_part_list[2] in ssr_protocol:
                         yaml_url.setdefault('protocol', server_part_list[2])
                     else:
@@ -603,7 +603,7 @@ class sub_convert():
                     elif re.compile(r'^[-+]?[-0-9]\d*\.\d*|[-+]?\.?[0-9]\d*$').match(server_password):
                         yaml_url.setdefault('password', '!<str> ' + server_password)
                     else:
-                        yaml_url.setdefault('password', server_password)
+                        yaml_url.setdefault('password', '"' + server_password + '"')
                     if len(part_list) == 4:
                         for config in part_list[2].split('&'):
                             if 'sni=' in config:
