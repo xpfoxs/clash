@@ -22,10 +22,10 @@ class sub_convert():
         for url in urls:
             # 对url编码
             url_quote = urllib.parse.quote(url, safe='')
-            # 转换并获取订阅链接数据
-            for server_host in server_host_list:
-                converted_url = server_host+'/sub?target=mixed&url='+url_quote+'&list=true'
-                try:
+            try:
+                # 转换并获取订阅链接数据
+                for server_host in server_host_list:
+                    converted_url = server_host+'/sub?target=mixed&url='+url_quote+'&list=true'
                     s = requests.Session()
                     s.mount('http://', HTTPAdapter(max_retries=3))
                     s.mount('https://', HTTPAdapter(max_retries=3))
@@ -36,14 +36,11 @@ class sub_convert():
                         if server_host is server_host_list[-1]:
                             print(f"Can not transform: {server_host}, downloading...")
                             resp = s.get(url, timeout=6)
-                        continue
-                    else:
-                        break
-                except Exception:
-                    # 链接有问题，直接返回原始错误
-                    print('网络错误，检查订阅转换服务器是否失效:' + converted_url + '\n')
-                    continue
-            node_list = resp.text
+                node_list = resp.text
+            except Exception:
+                # 链接有问题，直接返回原始错误
+                print(f'网络错误，检查订阅转换服务器是否失效: {converted_url}\n')
+                continue
             # 改名
             node_list_formated = sub_convert.format(node_list)
             sub_content.append(node_list_formated)
