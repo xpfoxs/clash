@@ -256,7 +256,7 @@
     "remarks": "58.35.228.202",
     "site": "https://58.35.228.202:8084",
     "url": "https://58.35.228.202:8084/clash/proxies",
-    "enabled": true
+    "enabled": false
   },
   {
     "id": 37,
