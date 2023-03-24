@@ -71,7 +71,7 @@ class sub_convert():
                         node = 'ss://' + node_raw
                     else:
                         print("特殊ss节点：" + node + "\n")
-                        node_part = node_del_head.split('#')
+                        node_part = re.split('\?|#', node_del_head)
                         node_part_head_decoded = sub_convert.base64_decode(
                             node_part[0])
                         node_part_head = re.split('@|:', node_part_head_decoded, maxsplit=0)
@@ -648,6 +648,6 @@ class sub_convert():
 
         return yaml_content
 if __name__ == '__main__':
-    sub_convert.get_node_from_sub("https://58.35.228.202:8084/clash/proxies")
-    # sub_convert.format("ss://YWVzLTI1Ni1nY206NTA3MzY0ZmI3OTFlQGZuNjAwbWxpbmVzMDIxLnN2Y2xpbmUuY29tOjk5NQ?v2ray-plugin=eyJwYXRoIjoiXC9rcG56eXhzaiIsImhvc3QiOiJmbjYwMG1saW5lczAyMS5zdmNsaW5lLmNvbSIsIm1vZGUiOiJ3ZWJzb2NrZXQiLCJ0bHMiOnRydWV9#%5B%E5%8F%B0%E6%B9%BESS%2A%5DFN600MLINES021.SVCLINE.COM%3A995")
-    # sub_convert.yaml_encode(["trojan://3ce74a1a-d01c-48bc-bba2-f643ff70667c@catlog.flareai.science:13443?alpn=['h2']&peer=106-110-192-225.d.cjjd20.com&allowInsecure=True#%5B%F0%9F%87%A8%F0%9F%87%B3%5Dcatlog.flareai.science%3A13443%283ce74a1a-d01c-48bc-bba2-f643ff70667c%29"])
+    # sub_convert.get_node_from_sub("https://58.35.228.202:8084/clash/proxies")
+    sub_convert.format("ss://YWVzLTEyOC1nY206M2U3NjBmZmQtZGY0Ny00Y2YyLWI3NTMtMjQ4MjYyOTcwYjhlQHVzMi5saW5naHVuMy54eXo6NDAwMDc=?country=8J-HuvCfh7ggVVM=#%5B%E4%B8%AD%E5%9B%BDSS%5DUS2.LINGHUN3.XYZ%3A40007")
+    # sub_convert.yaml_encode(["ss://YWVzLTEyOC1nY206M2U3NjBmZmQtZGY0Ny00Y2YyLWI3NTMtMjQ4MjYyOTcwYjhlQHVzMi5saW5naHVuMy54eXo6NDAwMDc=?country=8J-HuvCfh7ggVVM=#%5B%E4%B8%AD%E5%9B%BDSS%5DUS2.LINGHUN3.XYZ%3A40007"])
