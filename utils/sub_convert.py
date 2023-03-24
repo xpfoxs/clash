@@ -70,7 +70,7 @@ class sub_convert():
                         node_raw = node_part[0] + '@' + node_part[1] + '#' + node_name
                         node = 'ss://' + node_raw
                     else:
-                        print("特殊ss节点：" + node + "\n")
+                        # print("特殊ss节点：" + node + "\n")
                         node_part = re.split('\?|#', node_del_head)
                         node_part_head_decoded = sub_convert.base64_decode(
                             node_part[0])
