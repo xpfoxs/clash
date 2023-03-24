@@ -381,10 +381,11 @@ class sub_convert():
                         print('节点格式错误')
                     else:
                         yaml_url.setdefault('name', '"' + urllib.parse.unquote(vmess_config['ps']) + '"')
-                        if '[' in vmess_config['add'] or ']' in vmess_config['add']:
-                            yaml_url.setdefault('server', re.sub('\[|\]|{|}', '', vmess_config['add']))
-                        else:
+                        vmess_config['add'] = re.sub('\[|\]|{|}', '', vmess_config['add'])
+                        if re.match('^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$|^(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)+([A-Za-z]|[A-Za-z][A-Za-z0-9\-]*[A-Za-z0-9])$', vmess_config['add']):
                             yaml_url.setdefault('server', vmess_config['add'])
+                        else:
+                            continue
                         yaml_url.setdefault('port', int(vmess_config['port']))
                         yaml_url.setdefault('type', 'vmess')
                         if vmess_config['id'] == '0' or re.findall("[g-z]", vmess_config['id']) or len(vmess_config['id']) != 36:
