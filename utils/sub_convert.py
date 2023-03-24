@@ -26,20 +26,21 @@ class sub_convert():
                 # 转换并获取订阅链接数据
                 for server_host in server_host_list:
                     converted_url = server_host+'/sub?target=mixed&url='+url_quote+'&list=true'
-                    s = requests.Session()
-                    s.mount('http://', HTTPAdapter(max_retries=3))
-                    s.mount('https://', HTTPAdapter(max_retries=3))
-                    resp = s.get(converted_url, timeout=10)
+                    # s = requests.Session()
+                    # s.mount('http://', HTTPAdapter(max_retries=3))
+                    # s.mount('https://', HTTPAdapter(max_retries=3))
+                    resp = requests.get(converted_url, timeout=10, verify=None)
+                    # resp = s.get(converted_url, verify=None, timeout=10)
                     # 如果解析出错，将原始链接内容拷贝下来
                     if 'No nodes were found!' in resp.text or url in resp.text:
                         print(f"Transform Server: {server_host}, responsed message: {resp.text}")
                         if server_host is server_host_list[-1]:
                             print(f"Can not transform: {server_host}, downloading...")
-                            resp = s.get(url, timeout=10)
+                            resp = s.get(url, verify=None, timeout=10)
                 node_list = resp.text
-            except Exception:
+            except Exception as error:
                 # 链接有问题，直接返回原始错误
-                print(f'网络错误，检查订阅转换服务器是否失效: {converted_url}\n')
+                print(f'网络错误，检查订阅转换服务器是否失效: {converted_url}\n{error}')
                 continue
             # 改名
             node_list_formated = sub_convert.format(node_list)
@@ -70,7 +71,7 @@ class sub_convert():
                         node_raw = node_part[0] + '@' + node_part[1] + '#' + node_name
                         node = 'ss://' + node_raw
                     else:
-                        print("特殊ss节点改名：" + node + "\n")
+                        print("特殊ss节点：" + node + "\n")
                         node_part = node_del_head.split('#')
                         node_part_head_decoded = sub_convert.base64_decode(
                             node_part[0])

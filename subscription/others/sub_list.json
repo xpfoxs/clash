@@ -717,81 +717,81 @@
     "id": 102,
     "remarks": "shbioc/clash",
     "site": "https://github.com/shbioc/clash",
-    "url": "https://raw.githubusercontent.com/shbioc/clash/main/aaa01.yml",
+    "url": "https://raw.githubusercontent.com/shbioc/clash/main/aaa01.yaml|https://raw.githubusercontent.com/shbioc/clash/main/aaa02.yaml",
     "enabled": true
   },
   {
-    "id": 102,
+    "id": 103,
     "remarks": "nextz06/config",
     "site": "https://github.com/nextz06/config",
     "url": "https://raw.githubusercontent.com/nextz06/config/main/singapura.yaml",
     "enabled": true
   },
   {
-    "id": 103,
+    "id": 104,
     "remarks": "101.64.235.156",
     "site": "https://101.64.235.156:8443",
     "url": "https://101.64.235.156:8443/clash/proxies",
     "enabled": true
   },
   {
-    "id": 104,
+    "id": 105,
     "remarks": "168.138.45.251",
     "site": "http://168.138.45.251",
     "url": "http://168.138.45.251/clash/proxies",
     "enabled": true
   },
   {
-    "id": 105,
+    "id": 106,
     "remarks": "81.70.255.175",
     "site": "http://81.70.255.175:8080",
     "url": "http://81.70.255.175:8080/clash/proxies",
     "enabled": false
   },
   {
-    "id": 106,
+    "id": 107,
     "remarks": "proxies.haisto.cn",
     "site": "https://proxies.haisto.cn",
     "url": "https://proxies.haisto.cn/clash/proxies",
     "enabled": true
   },
   {
-    "id": 107,
+    "id": 108,
     "remarks": "proxypool.6993300.com",
     "site": "https://proxypool.6993300.com",
     "url": "https://proxypool.6993300.com/clash/proxies",
     "enabled": true
   },
   {
-    "id": 108,
+    "id": 109,
     "remarks": "123.60.147.120",
     "site": "https://123.60.147.120",
     "url": "https://123.60.147.120/clash/proxies",
     "enabled": true
   },
   {
-    "id": 109,
+    "id": 110,
     "remarks": "proxy.yiun.xyz",
     "site": "https://proxy.yiun.xyz",
     "url": "https://proxy.yiun.xyz/clash/proxies",
     "enabled": true
   },
   {
-    "id": 110,
+    "id": 111,
     "remarks": "rvorch.treze.cc",
     "site": "https://rvorch.treze.cc",
     "url": "https://rvorch.treze.cc/clash/proxies",
     "enabled": true
   },
   {
-    "id": 111,
+    "id": 112,
     "remarks": "free.dsdog.tk",
     "site": "https://free.dsdog.tk",
     "url": "https://free.dsdog.tk/clash/proxies",
     "enabled": true
   },
   {
-    "id": 112,
+    "id": 113,
     "remarks": "klausvpn.posyao.com",
     "site": "http://klausvpn.posyao.com",
     "url": "http://klausvpn.posyao.com/clash/proxies",
