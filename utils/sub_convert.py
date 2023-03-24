@@ -71,6 +71,7 @@ class sub_convert():
                         node_raw = node_part[0] + '@' + node_part[1] + '#' + node_name
                         node = 'ss://' + node_raw
                     else:
+                        print("特殊ss节点改名：" + node + "\n")
                         node_part = node_del_head.split('#')
                         node_part_head_decoded = sub_convert.base64_decode(
                             node_part[0])
@@ -648,5 +649,5 @@ class sub_convert():
 
         return yaml_content
 if __name__ == '__main__':
-    sub_convert.format("vmess://eyJwb3J0IjogMTI1NDMsICJjaXBoZXIiOiAiYXV0byIsICJ0bHMiOiB0cnVlLCAic2VydmVybmFtZSI6ICIxMDYtMTEwLTE5Mi0yMjUuZC5jampkMjAuY29tIiwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAiaDItb3B0cyI6IHsiaG9zdCI6IFsiMTA2LTExMC0xOTItMjI1LmQuY2pqZDIwLmNvbSJdLCAicGF0aCI6ICIvbHp1NHQ2dDVqN3FwNzJlYmVwMGMifSwgInYiOiAiMiIsICJwcyI6ICJbXHU0ZTJkXHU1NmZkVk1FU1MqKipdREVMSVZFUlkuRkxBUkVBSS5TSVRFOjEyNTQzIiwgImFkZCI6ICJkZWxpdmVyeS5mbGFyZWFpLnNpdGUiLCAiaWQiOiAiM2NlNzRhMWEtZDAxYy00OGJjLWJiYTItZjY0M2ZmNzA2NjdjIiwgInN5YyI6ICJhdXRvIiwgImFpZCI6IDAsICJhbGxvd0luc2VjdXJlIjogdHJ1ZSwgIm5ldCI6ICJoMiIsICJ0eXBlIjogInZtZXNzIn0=")
+    sub_convert.format("ss://YWVzLTI1Ni1nY206NTA3MzY0ZmI3OTFlQGZuNjAwbWxpbmVzMDIxLnN2Y2xpbmUuY29tOjk5NQ?v2ray-plugin=eyJwYXRoIjoiXC9rcG56eXhzaiIsImhvc3QiOiJmbjYwMG1saW5lczAyMS5zdmNsaW5lLmNvbSIsIm1vZGUiOiJ3ZWJzb2NrZXQiLCJ0bHMiOnRydWV9#%5B%E5%8F%B0%E6%B9%BESS%2A%5DFN600MLINES021.SVCLINE.COM%3A995")
     # sub_convert.yaml_encode(["trojan://3ce74a1a-d01c-48bc-bba2-f643ff70667c@catlog.flareai.science:13443?alpn=['h2']&peer=106-110-192-225.d.cjjd20.com&allowInsecure=True#%5B%F0%9F%87%A8%F0%9F%87%B3%5Dcatlog.flareai.science%3A13443%283ce74a1a-d01c-48bc-bba2-f643ff70667c%29"])
