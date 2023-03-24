@@ -13,35 +13,37 @@ from requests.adapters import HTTPAdapter
 
 
 class sub_convert():
-    def get_node_from_sub(url_raw='', server_host='http://127.0.0.1:25500'):
+    def get_node_from_sub(url_raw):
         # 使用远程订阅转换服务
-        # server_host = 'https://sub.xeton.dev'
-        # 使用本地订阅转换服务
+        server_host_list = ['http://127.0.0.1:25500','https://sub.xeton.dev']
         # 分割订阅链接
         urls = url_raw.split('|')
         sub_content = []
         for url in urls:
-            # 对url进行ASCII编码
-            # # 切换代理
-            # if "github" in url:
-            #     url = url.replace("githubusercontent.com","fastgit.org")
+            # 对url编码
             url_quote = urllib.parse.quote(url, safe='')
             # 转换并获取订阅链接数据
-            converted_url = server_host+'/sub?target=mixed&url='+url_quote+'&list=true'
-            try:
-                s = requests.Session()
-                s.mount('http://', HTTPAdapter(max_retries=5))
-                s.mount('https://', HTTPAdapter(max_retries=5))
-                resp = s.get(converted_url, timeout=30)
-                # 如果解析出错，将原始链接内容拷贝下来
-                if 'No nodes were found!' in resp.text:
-                    print(resp.text + '\n下载订阅文件……')
-                    resp = s.get(url, timeout=30)
-                node_list = resp.text
-            except Exception as err:
-                # 链接有问题，直接返回原始错误
-                print('网络错误，检查订阅转换服务器是否失效:' + '\n' + converted_url + '\n' + str(err) + '\n')
-                continue
+            for server_host in server_host_list:
+                converted_url = server_host+'/sub?target=mixed&url='+url_quote+'&list=true'
+                try:
+                    s = requests.Session()
+                    s.mount('http://', HTTPAdapter(max_retries=5))
+                    s.mount('https://', HTTPAdapter(max_retries=5))
+                    resp = s.get(converted_url, timeout=100)
+                    # 如果解析出错，将原始链接内容拷贝下来
+                    if 'No nodes were found!' in resp.text or url in resp.text:
+                        print("Transform Server: {server_host}, responsed message: {resp.text}")
+                        if server_host is server_host_list[-1]:
+                            print("Can not transform: {server_host}, downloading...")
+                            node_list = s.get(url, timeout=100).text
+                        continue
+                    else:
+                        node_list = resp.text
+                        break
+                except Exception as err:
+                    # 链接有问题，直接返回原始错误
+                    print('网络错误，检查订阅转换服务器是否失效:' + converted_url + '\n' + str(err) + '\n')
+                    continue
             # 改名
             node_list_formated = sub_convert.format(node_list)
             sub_content.append(node_list_formated)
@@ -649,6 +651,6 @@ class sub_convert():
 
         return yaml_content
 if __name__ == '__main__':
-    # sub_convert.get_node_from_sub("https://proxies.haisto.cn/clash/proxies")
+    sub_convert.get_node_from_sub("https://proxies.haisto.cn/clash/proxies")
     # sub_convert.format("ss://YWVzLTI1Ni1nY206NTA3MzY0ZmI3OTFlQGZuNjAwbWxpbmVzMDIxLnN2Y2xpbmUuY29tOjk5NQ?v2ray-plugin=eyJwYXRoIjoiXC9rcG56eXhzaiIsImhvc3QiOiJmbjYwMG1saW5lczAyMS5zdmNsaW5lLmNvbSIsIm1vZGUiOiJ3ZWJzb2NrZXQiLCJ0bHMiOnRydWV9#%5B%E5%8F%B0%E6%B9%BESS%2A%5DFN600MLINES021.SVCLINE.COM%3A995")
     # sub_convert.yaml_encode(["trojan://3ce74a1a-d01c-48bc-bba2-f643ff70667c@catlog.flareai.science:13443?alpn=['h2']&peer=106-110-192-225.d.cjjd20.com&allowInsecure=True#%5B%F0%9F%87%A8%F0%9F%87%B3%5Dcatlog.flareai.science%3A13443%283ce74a1a-d01c-48bc-bba2-f643ff70667c%29"])
