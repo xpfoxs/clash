@@ -82,7 +82,7 @@ trojan://a1718180-d616-4b71-9bb6-3e96ba20f921@140.238.12.83:443?allowInsecure=1&
 trojan://4f7dc540-d244-4e64-af21-4b5bb300add3@132.226.5.246:443?allowInsecure=1&sni=www.tokyo2023.ga#%5B%F0%9F%87%AF%F0%9F%87%B5%5D132.226.5.246%3A443%284f7dc540-d244-4e64-af21-4b5bb300add3%29
 trojan://a71df8e7-d563-3ebc-a26a-168c8dc8c9f3@20016.purefast2.com:20016?allowInsecure=1#%5B%F0%9F%87%A8%F0%9F%87%B3%5D20016.purefast2.com%3A20016%28a71df8e7-d563-3ebc-a26a-168c8dc8c9f3%29
 trojan://b42c2c42-b8ef-4cbe-8443-8870cf10875a@20.188.25.73:443?allowInsecure=1&sni=data-tw.efyunpan.com#%5B%F0%9F%87%AF%F0%9F%87%B5%5D20.188.25.73%3A443%28b42c2c42-b8ef-4cbe-8443-8870cf10875a%29
-trojan://085f3ab6-92fb-4c56-8ed5-6d0df11d8c0c@de.liangyuandian.top:443?allowInsecure=1#%5B%F0%9F%87%B8%F0%9F%87%AC%5Dde.liangyuandian.top%3A443%28085f3ab6-92fb-4c56-8ed5-6d0df11d8c0c%29
+trojan://085f3ab6-92fb-4c56-8ed5-6d0df11d8c0c@de.liangyuandian.top:443?allowInsecure=1#%5B%F0%9F%87%A9%F0%9F%87%AA%5Dde.liangyuandian.top%3A443%28085f3ab6-92fb-4c56-8ed5-6d0df11d8c0c%29
 trojan://0cc6b4268dea0ba8@5.44.249.44:3389?allowInsecure=1#%5B%F0%9F%87%B8%F0%9F%87%AC%5D5.44.249.44%3A3389%280cc6b4268dea0ba8%29
 trojan://0cc6b4268dea0ba8@211.72.35.157:3389?allowInsecure=1#%5B%F0%9F%87%B9%F0%9F%87%BC%5D211.72.35.157%3A3389%280cc6b4268dea0ba8%29
 trojan://0cc6b4268dea0ba8@5.44.249.53:3389?allowInsecure=1#%5B%F0%9F%87%B8%F0%9F%87%AC%5D5.44.249.53%3A3389%280cc6b4268dea0ba8%29
@@ -177,7 +177,7 @@ trojan://8697fe6b-1lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d02552
 trojan://cd41b9d7-df15-46ad-a778-257b0851525a@hk05.trojanyyds.xyz:443?allowInsecure=1#%5B%F0%9F%87%AD%F0%9F%87%B0%5Dhk05.trojanyyds.xyz%3A443%28cd41b9d7-df15-46ad-a778-257b0851525a%29
 trojan://ab93a4c6-00b0-4e29-b979-dfa4071e3dbd@download2hkt.windowsupdate.lol:443?allowInsecure=1#%5B%F0%9F%87%AD%F0%9F%87%B0%5Ddownload2hkt.windowsupdate.lol%3A443%28ab93a4c6-00b0-4e29-b979-dfa4071e3dbd%29
 trojan://8fb84310-7f34-4e8e-baa8-83001844cc27@jp.stablize.top:443?allowInsecure=1#%5B%F0%9F%87%B8%F0%9F%87%AC%5Djp.stablize.top%3A443%288fb84310-7f34-4e8e-baa8-83001844cc27%29
-trojan://5a035db3-34ea-48ca-9aa2-72c8229e1532@ru.mjt001.com:443?allowInsecure=1#%5B%F0%9F%87%AD%F0%9F%87%B0%5Dru.mjt001.com%3A443%285a035db3-34ea-48ca-9aa2-72c8229e1532%29
+trojan://5a035db3-34ea-48ca-9aa2-72c8229e1532@ru.mjt001.com:443?allowInsecure=1#%5B%F0%9F%87%AF%F0%9F%87%B5%5Dru.mjt001.com%3A443%285a035db3-34ea-48ca-9aa2-72c8229e1532%29
 trojan://18844@zxcvbn@os-tr-5.cats22.net:443?allowInsecure=1#%5B%F0%9F%87%AF%F0%9F%87%B5%5Dos-tr-5.cats22.net%3A443%2818844%40zxcvbn%29
 ss://YWVzLTI1Ni1nY206WTZSOXBBdHZ4eHptR0M@85.208.108.60:5600#%5B%F0%9F%87%AF%F0%9F%87%B5%5D85.208.108.60%3A5600%28Y6R9pAtvxxzmGC%29
 ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ@85.208.108.60:8008#%5B%F0%9F%87%AF%F0%9F%87%B5%5D85.208.108.60%3A8008%28XKFKl2rULjIp74%29
@@ -240,7 +240,7 @@ trojan://7d0f1f83-0f2f-4b90-930e-de44ac233fef@jp.stablize.top:443?allowInsecure=
 trojan://7d0f1f83-0f2f-4b90-930e-de44ac233fef@in.stablize.top:443?allowInsecure=1#%5B%F0%9F%87%B8%F0%9F%87%AC%5Din.stablize.top%3A443%287d0f1f83-0f2f-4b90-930e-de44ac233fef%29
 trojan://a3fa58b581353bb375d2ddad0f327938@184.168.127.50:443?allowInsecure=1#%5B%F0%9F%87%B8%F0%9F%87%AC%5D184.168.127.50%3A443%28a3fa58b581353bb375d2ddad0f327938%29
 trojan://36ebef7d1b1d6205fd0c55f28800e674@72.167.45.6:443?allowInsecure=1#%5B%F0%9F%87%BA%F0%9F%87%B8%5D72.167.45.6%3A443%2836ebef7d1b1d6205fd0c55f28800e674%29
-trojan://4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52@lux.iamnotagoodman.com:443?allowInsecure=1#%5B%F0%9F%87%AD%F0%9F%87%B0%5Dlux.iamnotagoodman.com%3A443%284f8c0e41-dbdb-40f1-99cb-2c2a0b909b52%29
+trojan://4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52@lux.iamnotagoodman.com:443?allowInsecure=1#%5B%F0%9F%87%B8%F0%9F%87%AC%5Dlux.iamnotagoodman.com%3A443%284f8c0e41-dbdb-40f1-99cb-2c2a0b909b52%29
 trojan://d4e41ff772c7fd45@45.11.104.94:3389?allowInsecure=1#%5B%F0%9F%87%AD%F0%9F%87%B0%5D45.11.104.94%3A3389%28d4e41ff772c7fd45%29
 vmess://eyJ2IjogIjIiLCAicHMiOiAiW1x1ZDgzY1x1ZGRmYVx1ZDgzY1x1ZGRmOF1jZG4udmxvd2Vycy50b3A6ODAoYWY2YjliZDYtMjk5My00ODhjLThjOTYtYTNlYTZmN2VmZTA1KSIsICJhZGQiOiAiY2RuLnZsb3dlcnMudG9wIiwgInBvcnQiOiAiODAiLCAidHlwZSI6ICJub25lIiwgImlkIjogImFmNmI5YmQ2LTI5OTMtNDg4Yy04Yzk2LWEzZWE2ZjdlZmUwNSIsICJhaWQiOiAiMCIsICJuZXQiOiAid3MiLCAicGF0aCI6ICIvIiwgImhvc3QiOiAiY2RuLnZsb3dlcnMudG9wIiwgInRscyI6ICIifQ==
 trojan://faf42aa0a9ad4c1e@5.44.249.52:3389?allowInsecure=1&sni=5.44.249.52#%5B%F0%9F%87%B8%F0%9F%87%AC%5D5.44.249.52%3A3389%28faf42aa0a9ad4c1e%29
