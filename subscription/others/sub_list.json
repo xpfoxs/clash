@@ -46,7 +46,7 @@
     "remarks": "colatiger/v2ray-nodes",
     "site": "https://github.com/colatiger/v2ray-nodes",
     "url": "https://proxy.huwo.top/hv.txt",
-    "enabled": true
+    "enabled": false
   },
   {
     "id": 7,
@@ -333,7 +333,7 @@
     "remarks": "4ooc/clash_sync",
     "site": "https://github.com/4ooc/clash_sync",
     "url": "https://raw.githubusercontent.com/4ooc/clash_sync/main/clash_auto|https://github.com/4ooc/clash_sync/blob/main/sub_website",
-    "enabled": true
+    "enabled": false
   },
   {
     "id": 48,
@@ -353,7 +353,7 @@
     "id": 50,
     "remarks": "samjoeyang/subscribe",
     "site": "https://github.com/samjoeyang/subscribe",
-    "url": "https://raw.githubusercontent.com/samjoeyang/subscribe/main/fly.txt",
+    "url": "https://raw.githubusercontent.com/samjoeyang/subscribe/main/assets/fly.txt",
     "enabled": true
   },
   {
@@ -578,7 +578,7 @@
     "remarks": "146.56.117.83",
     "site": "http://146.56.117.83:8000",
     "url": "http://146.56.117.83:8000/clash/proxies",
-    "enabled": true
+    "enabled": false
   },
   {
     "id": 83,
