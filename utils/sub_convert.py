@@ -488,12 +488,16 @@ class sub_convert():
                                 if 'plugin' in yaml_url.keys():
                                     if 'obfs' in yaml_url['plugin']:
                                         if 'obfs=' in parameter:
-                                            yaml_url.setdefault('plugin-opts', {}).setdefault('mode', parameter.split('=')[-1])
+                                            obfs_mode_list = ['tls','http']
+                                            if parameter in obfs_mode_list:
+                                                yaml_url.setdefault('plugin-opts', {}).setdefault('mode', parameter.split('=')[-1])
                                         elif 'obfs-host=' in parameter:
                                             yaml_url.setdefault('plugin-opts', {}).setdefault('host', re.sub('\[|\]|{|}','',parameter.split('=')[-1]))
                                     elif 'v2ray-plugin' in yaml_url['plugin']:
                                         if 'mode=' in parameter:
-                                            yaml_url.setdefault('plugin-opts', {}).setdefault('mode', parameter.split('=')[-1])
+                                            # v2ray_plugin_mode_list = ['websocket']
+                                            # if parameter in v2ray_plugin_mode_list:
+                                            yaml_url.setdefault('plugin-opts', {}).setdefault('mode', 'websocket')
                                         elif 'tls' in parameter:
                                             yaml_url.setdefault('plugin-opts', {}).setdefault('tls', 'true')
                                         elif 'mux' in parameter:
