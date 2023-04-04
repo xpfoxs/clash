@@ -746,7 +746,7 @@
     "remarks": "81.70.255.175",
     "site": "http://81.70.255.175:8080",
     "url": "http://81.70.255.175:8080/clash/proxies",
-    "enabled": true
+    "enabled": false
   },
   {
     "id": 107,
