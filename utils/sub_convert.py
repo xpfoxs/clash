@@ -651,7 +651,7 @@ class sub_convert():
                                     yaml_url.setdefault('grpc-opts', {}).setdefault('grpc-service-name', config[12:])
                             else:
                                 if 'alpn=' in config:
-                                    yaml_url.setdefault('alpn', config[5:].replace("'",'"'))
+                                    yaml_url.setdefault('alpn','[' + '"' + re.sub("\[|\]|'",'',urllib.parse.unquote(config[5:])) + '"' + ']')
                         if 'network' in yaml_url.keys():
                             if yaml_url['network'] == 'ws':
                                 if 'ws_opts' not in yaml_url.keys():
@@ -680,4 +680,4 @@ class sub_convert():
 if __name__ == '__main__':
     # sub_convert.get_node_from_sub("https://58.35.228.202:8084/clash/proxies")
     # sub_convert.format("ss://YWVzLTEyOC1nY206M2U3NjBmZmQtZGY0Ny00Y2YyLWI3NTMtMjQ4MjYyOTcwYjhlQHVzMi5saW5naHVuMy54eXo6NDAwMDc=?country=8J-HuvCfh7ggVVM=#%5B%E4%B8%AD%E5%9B%BDSS%5DUS2.LINGHUN3.XYZ%3A40007")
-    sub_convert.yaml_encode(["ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3MDkyOTBiOS04ZTE0LTQ2ZDYtYTU2Zi0yMDk3YWU4MTc5ZTJAY2F0bG9nLmZsYXJlYWkuc2NpZW5jZToxNTU0Mw==#%5B%E4%B8%AD%E5%9B%BDSS%5DCATLOG.FLAREAI.SCIENCE%3A15543"])
+    sub_convert.yaml_encode(["trojan://d1478689-439c-4590-b7ce-36e786a02dc3@youtube-bai-piao-wang-zhe-usa.98848.xyz:443?security=tls&sni=youtube-bai-piao-wang-zhe-usa.98848.xyz&alpn=http%2F1.1&type=tcp&headerType=none#%5B%F0%9F%87%BA%F0%9F%87%B8%5Dyoutube-bai-piao-wang-zhe-usa.98848.xyz%3A443%28d1478689-439c-4590-b7ce-36e786a02dc3%29"])

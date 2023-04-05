@@ -2165,7 +2165,7 @@ proxies:
   - {name: "[🇯🇵]89.31.126.147:805(G!yBwPWH3Vao)", server: 89.31.126.147, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: "G!yBwPWH3Vao"}
   - {name: "[🇦🇶]hnyd.52147.top:30120(52a98419-efab-4c34-b4cc-4e2a7bc37029)", server: hnyd.52147.top, port: 30120, type: trojan, password: "52a98419-efab-4c34-b4cc-4e2a7bc37029", sni: sni=huayun.xyz}
   - {name: "[🇯🇵]5.183.176.80:809(G!yBwPWH3Vao)", server: 5.183.176.80, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: "G!yBwPWH3Vao"}
-  - {name: "[🇺🇸]youtube-bai-piao-wang-zhe-usa.98848.xyz:443(d1478689-439c-4590-b7ce-36e786a02dc3)", server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: "d1478689-439c-4590-b7ce-36e786a02dc3", sni: youtube-bai-piao-wang-zhe-usa.98848.xyz, alpn: http%2F1.1, network: tcp, udp: true}
+  - {name: "[🇺🇸]youtube-bai-piao-wang-zhe-usa.98848.xyz:443(d1478689-439c-4590-b7ce-36e786a02dc3)", server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: "d1478689-439c-4590-b7ce-36e786a02dc3", sni: youtube-bai-piao-wang-zhe-usa.98848.xyz, alpn: ["http/1.1"], network: tcp, udp: true}
   - {name: "[🇯🇵]89.31.126.225:802(G!yBwPWH3Vao)", server: 89.31.126.225, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: "G!yBwPWH3Vao"}
   - {name: "[🇨🇳]pp1.zhengzhongfeizhu.xyz:33004(eb2f8154-ff58-3b99-b393-28c8eecdbe64)", server: pp1.zhengzhongfeizhu.xyz, port: 33004, type: vmess, uuid: eb2f8154-ff58-3b99-b393-28c8eecdbe64, alterId: 1, cipher: auto, network: tcp}
   - {name: "[🇯🇵]5.183.176.80:805(G!yBwPWH3Vao)", server: 5.183.176.80, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: "G!yBwPWH3Vao"}
