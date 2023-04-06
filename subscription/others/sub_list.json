@@ -296,8 +296,8 @@
   {
     "id": 42,
     "remarks": "mahdibland/ShadowsocksAggregator",
-    "site": "https://github.com/mahdibland/ShadowsocksAggregator",
-    "url": "https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_base64.txt|https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/airport_merge_base64.txt",
+    "site": "https://github.com/mahdibland/V2RayAggregator",
+    "url": "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_base64.txt|https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/airport_merge_base64.txt",
     "enabled": true
   },
   {
