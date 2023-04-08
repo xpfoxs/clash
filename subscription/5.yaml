@@ -1,0 +1,5 @@
+proxies:
+  - {name: "[🇭🇰]hk9.microsoftjs.top:443(fd9e27ca-636d-421e-b67f-d38001404a83)", server: hk9.microsoftjs.top, port: 443, type: trojan, password: "fd9e27ca-636d-421e-b67f-d38001404a83", sni: tls.microsoftjs.top}
+  - {name: "[🇺🇸]ml.xxass.ml:443(caonima2022)", server: ml.xxass.ml, port: 443, type: trojan, password: "caonima2022"}
+  - {name: "[🇦🇶]104.21.84.81:80(12b1bed9-1534-41db-a530-a1dbf6c2a7c6)", server: 104.21.84.81, port: 80, type: vmess, uuid: 12b1bed9-1534-41db-a530-a1dbf6c2a7c6, alterId: 0, cipher: auto, network: ws, tls: false, ws-opts: {path: /filetransfer}}
+  - {name: "[🇺🇸]hax.smely.eu.org:80(58340bf3-d51d-45e2-87a8-effa78e4bca6)", server: hax.smely.eu.org, port: 80, type: vmess, uuid: 58340bf3-d51d-45e2-87a8-effa78e4bca6, alterId: 0, cipher: auto, network: ws, tls: false, ws-opts: {path: /hax02, headers: {host: hax.smely.eu.org}}}
