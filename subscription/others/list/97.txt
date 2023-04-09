@@ -1,8 +1,8 @@
 trojan://e0597322-b0d8-4afb-960a-39d5cbd7bd8e@178.239.171.103:443?allowInsecure=0&sni=wfi.sahnama.com#%5B%F0%9F%87%AC%F0%9F%87%A7%5D178.239.171.103%3A443%28e0597322-b0d8-4afb-960a-39d5cbd7bd8e%29
 trojan://ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2@cn-hk-package.hyperlinkvpn.xyz:50180?allowInsecure=0#%5B%F0%9F%87%AD%F0%9F%87%B0%5Dcn-hk-package.hyperlinkvpn.xyz%3A50180%28ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2%29
-trojan://3e1890e7-4746-4378-89ba-10c7bbe06094@1.hk1997.pro:443?allowInsecure=0#%5B%F0%9F%87%B7%F0%9F%87%BA%5D1.hk1997.pro%3A443%283e1890e7-4746-4378-89ba-10c7bbe06094%29
+trojan://3e1890e7-4746-4378-89ba-10c7bbe06094@1.hk1997.pro:443?allowInsecure=0#%5B%F0%9F%87%A6%F0%9F%87%B6%5D1.hk1997.pro%3A443%283e1890e7-4746-4378-89ba-10c7bbe06094%29
 trojan://cd27884b-c5af-34ec-b75f-8248077818fe@2.hg.kr.cat77.cloud:8443?allowInsecure=0#%5B%F0%9F%87%B0%F0%9F%87%B7%5D2.hg.kr.cat77.cloud%3A8443%28cd27884b-c5af-34ec-b75f-8248077818fe%29
-trojan://3e1890e7-4746-4378-89ba-10c7bbe06094@1.hk1997.pro:443?allowInsecure=0#%5B%F0%9F%87%B7%F0%9F%87%BA%5D1.hk1997.pro%3A443%283e1890e7-4746-4378-89ba-10c7bbe06094%29
+trojan://3e1890e7-4746-4378-89ba-10c7bbe06094@1.hk1997.pro:443?allowInsecure=0#%5B%F0%9F%87%A6%F0%9F%87%B6%5D1.hk1997.pro%3A443%283e1890e7-4746-4378-89ba-10c7bbe06094%29
 trojan://ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2@cn-hk-package.hyperlinkvpn.xyz:50180?allowInsecure=0#%5B%F0%9F%87%AD%F0%9F%87%B0%5Dcn-hk-package.hyperlinkvpn.xyz%3A50180%28ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2%29
 trojan://e0597322-b0d8-4afb-960a-39d5cbd7bd8e@wfi.sahnama.com:443?allowInsecure=0&sni=wfi.sahnama.com#%5B%F0%9F%87%AC%F0%9F%87%A7%5Dwfi.sahnama.com%3A443%28e0597322-b0d8-4afb-960a-39d5cbd7bd8e%29
 trojan://cd27884b-c5af-34ec-b75f-8248077818fe@2.hg.kr.cat77.cloud:8443?allowInsecure=0#%5B%F0%9F%87%B0%F0%9F%87%B7%5D2.hg.kr.cat77.cloud%3A8443%28cd27884b-c5af-34ec-b75f-8248077818fe%29
