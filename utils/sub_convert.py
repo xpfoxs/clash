@@ -379,6 +379,7 @@ class sub_convert():
                     # 生成 yaml 节点字典
                     if vmess_config['id'] == '':
                         print('节点格式错误')
+                        continue
                     else:
                         yaml_url.setdefault('name', '"' + urllib.parse.unquote(vmess_config['ps']) + '"')
                         vmess_config['add'] = re.sub('\[|\]|{|}', '', vmess_config['add'])
