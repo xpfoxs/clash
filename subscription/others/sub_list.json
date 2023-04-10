@@ -151,7 +151,7 @@
     "remarks": "JasonZhao2k08/ssr",
     "site": "https://github.com/JasonZhao2k08/ssr",
     "url": "https://raw.githubusercontent.com/JasonZhao2k08/fly/main/index.html",
-    "enabled": true
+    "enabled": false
   },
   {
     "id": 22,
@@ -255,7 +255,7 @@
     "id": 36,
     "remarks": "1.14.59.143",
     "site": "http://1.14.59.143:12580",
-    "url": "http://1.14.59.143:12580/clash",
+    "url": "http://1.14.59.143:12580/clash/proxies",
     "enabled": true
   },
   {
@@ -795,6 +795,6 @@
     "remarks": "klausvpn.posyao.com",
     "site": "http://klausvpn.posyao.com",
     "url": "http://klausvpn.posyao.com/clash/proxies",
-    "enabled": true
+    "enabled": false
   }
 ]
