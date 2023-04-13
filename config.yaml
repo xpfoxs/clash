@@ -74,7 +74,7 @@ proxy-providers:
     type: http
     url: "https://cdn.jsdelivr.net/gh/songtao1873/clash@main/subscription/0.yaml"
     interval: 2000
-    path: subscription/0.yaml
+    path: "./profiles/github_0.yaml"
     health-check:
       enable: true
       interval: 2000
@@ -84,7 +84,7 @@ proxy-providers:
     type: http
     url: "https://cdn.jsdelivr.net/gh/songtao1873/clash@main/subscription/1.yaml"
     interval: 2000
-    path: subscription/1.yaml
+    path: "./profiles/github_1.yaml"
     health-check:
       enable: true
       interval: 2000
@@ -94,7 +94,7 @@ proxy-providers:
     type: http
     url: "https://cdn.jsdelivr.net/gh/songtao1873/clash@main/subscription/2.yaml"
     interval: 2000
-    path: subscription/2.yaml
+    path: "./profiles/github_2.yaml"
     health-check:
       enable: true
       interval: 2000
@@ -104,7 +104,7 @@ proxy-providers:
     type: http
     url: "https://cdn.jsdelivr.net/gh/songtao1873/clash@main/subscription/3.yaml"
     interval: 2000
-    path: subscription/3.yaml
+    path: "./profiles/github_3.yaml"
     health-check:
       enable: true
       interval: 2000
@@ -114,17 +114,17 @@ proxy-providers:
     type: http
     url: "https://cdn.jsdelivr.net/gh/songtao1873/clash@main/subscription/4.yaml"
     interval: 2000
-    path: subscription/4.yaml
+    path: "./profiles/github_4.yaml"
     health-check:
       enable: true
       interval: 2000
       url: "http://www.gstatic.com/generate_204"
 
   5.c:
-    type: file
+    type: http
     url: "https://cdn.jsdelivr.net/gh/songtao1873/clash@main/subscription/5.yaml"
     interval: 2000
-    path: subscription/5.yaml
+    path: "./profiles/github_5.yaml"
     health-check:
       enable: true
       interval: 2000
